@@ -7,18 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Tue, 30 Oct 2018 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 20 Oct 2018 08:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://gself.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction to R</title>
-      <link>https://gself.com/tutorials/tutorial01/</link>
-      <pubDate>Tue, 30 Oct 2018 08:00:00 -0700</pubDate>
+      <link>https://gself.com/tutorials/181030-intro-to-r/</link>
+      <pubDate>Sat, 20 Oct 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tutorials/tutorial01/</guid>
-      <description>About projectAenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
+      <guid>https://gself.com/tutorials/181030-intro-to-r/</guid>
+      <description>Welcome to R!Statistical analysis is the core of nearly all research projects and researchers have a wide variety of statistical tools that they can use, like SPSS and SAS. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces R, a powerful, open source statistical analysis program that is available free of charge. But before diving into a statistics package there is one important background fundamental that must be covered: data.</description>
     </item>
     
     <item>
@@ -37,17 +37,6 @@
       
       <guid>https://gself.com/2018/08/21/2018-08-21-moving-day/</guid>
       <description>The Start of Something Big!I was recently transferred from the Cochise College Institutional Research department to Special Assistant to the Provost. In this new role, I have been given a good bit of freedom to explore the college’s data and look for interesting relationships and other facts. I have a number of tools available to me, including SQL, R, Tableau, and Rapid-Miner. However, for simplicity, I’ve decided to focus the lion’s share of my time and talent (at least at first) on R and use the various R tools (like ggplot, plotly, and shiny) to explore and analyze data.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>https://gself.com/2015/07/23/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://gself.com/2015/07/23/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
     <item>

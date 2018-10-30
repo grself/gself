@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R"
 author: "George Self"
-date: 2018-10-30T08:00:00-07:00
+date: 2018-10-20T08:00:00-07:00
 categories: ["r"]
 tags: ["tutorial"]
 ---
@@ -23,6 +23,7 @@ here::here()
 ```{r, include=FALSE}
 tutorial::go_interactive()
 ```
+# Welcome to R!
 
 Statistical analysis is the core of nearly all research projects and researchers have a wide variety of statistical tools that they can use, like *SPSS* and *SAS*. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces R, a powerful, open source statistical analysis program that is available free of charge. But before diving into a statistics package there is one important background fundamental that must be covered: data.
 
@@ -117,7 +118,7 @@ The *Main Street Cafe* data frame will be used for all of the submitted activiti
 * Line 4: The minimum value of the "age" variable from the *cafe* data frame is displayed.
 
 ```{r ex="cafeData1", type="pre-exercise-code"}
-cafe <- read.csv('maincafe.csv')
+cafe <- read.csv('/data/maincafe.csv')
 ```
 
 ```{r ex="cafeData1", type="sample-code"}

@@ -30,16 +30,5 @@
       <description>The Start of Something Big!I was recently transferred from the Cochise College Institutional Research department to Special Assistant to the Provost. In this new role, I have been given a good bit of freedom to explore the college’s data and look for interesting relationships and other facts. I have a number of tools available to me, including SQL, R, Tableau, and Rapid-Miner. However, for simplicity, I’ve decided to focus the lion’s share of my time and talent (at least at first) on R and use the various R tools (like ggplot, plotly, and shiny) to explore and analyze data.</description>
     </item>
     
-    <item>
-      <title>Hello R Markdown</title>
-      <link>https://gself.com/2015/07/23/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://gself.com/2015/07/23/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
   </channel>
 </rss>

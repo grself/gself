@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gself.com/tutorials/tutorial01/</loc>
-    <lastmod>2018-10-30T08:00:00-07:00</lastmod>
+    <loc>https://gself.com/tutorials/181030-intro-to-r/</loc>
+    <lastmod>2018-10-20T08:00:00-07:00</lastmod>
   </url>
   
   <url>
@@ -15,11 +15,6 @@
   <url>
     <loc>https://gself.com/2018/08/21/2018-08-21-moving-day/</loc>
     <lastmod>2018-08-21T08:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/2015/07/23/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -45,32 +40,14 @@
   </url>
   
   <url>
-    <loc>https://gself.com/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://gself.com/post/</loc>
     <lastmod>2018-08-24T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://gself.com/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://gself.com/</loc>
-    <lastmod>2018-10-30T08:00:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2018-10-20T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,8 +58,14 @@
   </url>
   
   <url>
+    <loc>https://gself.com/tags/tutorial/</loc>
+    <lastmod>2018-10-20T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://gself.com/tutorials/</loc>
-    <lastmod>2018-10-30T08:00:00-07:00</lastmod>
+    <lastmod>2018-10-20T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
