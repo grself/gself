@@ -1,6 +1,6 @@
 +++
 title = "Contact"
-date: 2018-08-21T08:00:00-07:00
+date = 2018-08-21T08:00:00-07:00
 author = "George Self"
 description = "How to contact me."
 +++
