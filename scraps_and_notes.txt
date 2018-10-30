@@ -1,0 +1,165 @@
+This file just contains some scraps and miscellaneous notes about my blog site.
+
+## Ideas to develop
+Animation for the growth of the virtual campus
+Present one or two AZ Assist reports
+Tap more reports from EMSI
+
+## I use the Hugo "Academic" theme
+
+###### Start of Document meta-data header ######
+
+---
+title: "Moving Day!"
+subtitle: "The start of something big!"
+summary: "My first blog post documenting my work with the Provost."
+author: "George Self"
+date: 2018-08-21T08:00:00-07:00
+categories: ["cochise"]
+tags: []
+---
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(tidyverse)
+library(here)
+library(ggplot2)
+library(plotly)
+library(widgetframe)
+library(DT)
+
+# Set the rproj home directory
+here::here()
+```
+
+###### End of document meta-data header ######
+
+## Image notes
+
+post header images are 680X500 px at 90 px/in.
+The font for the single letter is segoe UI heavy
+
+To insert image, place it in static/img
+then use a link like this: ![caption](/img/x.png)
+
+## Header Captions
+
+cochise: caption: "Image credit: Cochise College Marketing Department"
+economy: caption: "Photo by Markus Spiske on *Unsplash*"
+ipeds: caption: "Image credit: Photo by delfi de la Rua on *Unsplash*"
+moodle: caption: "Image credit: Photo by rawpixel on *Unsplash*"
+R: caption: "Image credit: Photo by M. B. M. on *Unsplash*"
+Tutorial: caption: "Photo by Isis França on *Unsplash*"
+workforce: caption: "Image credit: Photo by George Self"
+
+## Framewidget
+
+All htmlwidgets need to be wrapped in a framewidget.
+Note: datatables seem to fit best with a pagelength of 7
+
+library(widgetframe)
+f1 <- datatable(names, options = list(pageLength = 7))
+frameWidget(f1)
+
+
+## Bar Plot Setup
+ggplot(data = t, aes(x = name, y = tuition)) +
+  geom_bar(stat = "identity", aes(fill = tuition)) +
+  scale_x_discrete(limits = t$name[order(-t$tuition)]) +
+  scale_fill_continuous(low = 'orange', high = 'brown') +
+  theme_bw() +
+  labs(title = "Tuition Comparison", x = "College", y = "Tuition") +
+  guides(fill=guide_legend(title="Tuition")) +
+  coord_flip()
+
+## plotly 
+
+Notes: do not put a plotly plot in a framewidget (it becomes very wide). 
+Do not set an output width, let the system make it fit in the reading frame.
+
+p <- ggplot(data = reg02, aes(x = Tuition, y = Hispanic)) +
+  geom_point() +
+  theme_bw() +
+  labs(title = "Percent of Hispanic Students vs Tuition", 
+       x = "Tuition/student/year", 
+       y = "Percent of Hispanic Students") +
+  geom_smooth(method = 'lm')
+
+ggplotly(p)
+
+## HTMLWIDGETS
+
+(see htmlwidgets.org)
+
+## Kable
+
+df %>%
+  kable("html", align = c("l","r","r","r","r","r","r","r")) %>%
+    kable_styling(bootstrap_options = "striped",
+                full_width = F,
+                position = "center") %>%
+    row_spec(row = 1, 
+             bold = TRUE,
+             color = "#FFFFFF",
+             background = "#1e4d99")
+
+
+
+##Directory
+
+### Data frames
+* age_eth_sex.csv
+* CrsProgOrig.csv
+* enr_hist_all.csv
+* enr_hist_cte.csv
+* jobs_completions.csv
+* peers.csv
+* reg.csv
+* transfer.csv
+* unemp.csv
+
+### R Functions
+* correlogram
+  * 180831: About Correlation
+  * 181012: Regression
+* dplyr - combine two rows into one: 180907: Math Transfer
+* head(): 181009: Explore Data
+* kurtosis
+  * 181005: About Data
+  * 181009: Explore Data
+* lm(): 181012: Regression
+* pairs.panel(): 181030: SPLOM (this is from the psych library)
+* shapiro.test: 181005: About Data
+* skewness
+  * 181005: About Data
+  * 181009: Explore Data
+* str(): 181009: Explore Data
+
+### Visualizations
+* data table (DT)
+  * 181019: Discipline Success
+  * 181030: Splom
+* ggPlot
+  * bar: 
+    * 180824: Introduction to IPEDS Peers
+    * 181009: Explore Data
+  * mosiac: 180828: Registration Exploration
+  * alluvial: 180907: Math Transfer
+  * histogram: 181005: About Data
+  * density: 
+    * 181005: About Data
+    * 181009: Explore Data (inc mean/median lines)
+  * scatter
+    * 181022: Art With R
+* Kable
+  * 180824: Introduction to IPEDS Peers
+  * 180828: Registration Exploration
+  * 180831: About Correlation
+  * 181009: Explore Data
+* plotly
+  * 180828: Registration Exploration (line)
+  * 180904: Registration vs Unemployment (animated scatter plot)
+  * 180907: Math Transfer (bar)
+  * 181012: Regression
+* Scatterplot Matrix (SPLOM)
+  * 181030: Splom

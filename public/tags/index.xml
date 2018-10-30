@@ -7,44 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Wed, 02 Apr 2014 02:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Aug 2018 08:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://gself.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>https://gself.com/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 02:13:50 +0000</pubDate>
+      <title>Peers</title>
+      <link>https://gself.com/tags/peers/</link>
+      <pubDate>Fri, 24 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://gself.com/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 02:13:50 +0000</pubDate>
-      
-      <guid>https://gself.com/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://gself.com/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 02:13:50 +0000</pubDate>
-      
-      <guid>https://gself.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://gself.com/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://gself.com/tags/hugo/</guid>
+      <guid>https://gself.com/tags/peers/</guid>
       <description></description>
     </item>
     
@@ -72,24 +45,6 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>https://gself.com/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>https://gself.com/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 02:13:50 +0000</pubDate>
-      
-      <guid>https://gself.com/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://gself.com/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 02:13:50 +0000</pubDate>
-      
-      <guid>https://gself.com/tags/themes/</guid>
       <description></description>
     </item>
     

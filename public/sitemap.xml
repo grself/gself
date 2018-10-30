@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</loc>
+    <lastmod>2018-08-24T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/08/21/2018-08-21-moving-day/</loc>
+    <lastmod>2018-08-21T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gself.com/2015/07/23/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
@@ -23,52 +33,14 @@
   </url>
   
   <url>
-    <loc>https://gself.com/2014/09/28/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/2014/04/02/goisforlovers/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/2014/04/02/migrate-from-jekyll/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/2014/04/02/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/tags/development/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/tags/go/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/tags/golang/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://gself.com/page/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/peers/</loc>
+    <lastmod>2018-08-24T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,7 +52,7 @@
   
   <url>
     <loc>https://gself.com/post/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2018-08-24T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -104,19 +76,7 @@
   
   <url>
     <loc>https://gself.com/tags/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/tags/templates/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/tags/themes/</loc>
-    <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+    <lastmod>2018-08-24T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
