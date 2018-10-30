@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ipeds on Random Synaptic Firings</title>
+    <link>/tags/ipeds/</link>
+    <description>Recent content in Ipeds on Random Synaptic Firings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>George Self</copyright>
+    <lastBuildDate>Fri, 31 Aug 2018 08:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/ipeds/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Correlation</title>
+      <link>/2018/08/31/2018-08-31-about-correlation/</link>
+      <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
+      
+      <guid>/2018/08/31/2018-08-31-about-correlation/</guid>
+      <description>One of the main preoccupations for data researchers is to attempt to find some sort of correlation, or relationship, between two or more attributes of a data frame. The calculated correlation is a number between -1.0 and +1.0 where correlations close to 0.0 are very weak while correlations near the extremes are strong. The type of correlation that can be calculated is dependent on the type of data being compared since the process for categorical data is fundamentally different than that for continuous data.</description>
+    </item>
+    
+  </channel>
+</rss>
