@@ -7,10 +7,10 @@ Tap more reports from EMSI
 
 ## I use the Hugo "Academic" theme
 
-###### Start of Document meta-data header ######
+###### File Header ######
 
 ---
-title: "Moving Day!"
+title: "x"
 author: "George Self"
 date: 2018-08-21T08:00:00-07:00
 categories: ["cochise"]
@@ -30,25 +30,19 @@ library(DT)
 here::here()
 ```
 
-###### End of document meta-data header ######
+###### End of file header ######
 
-## Image notes
+###### Data Files ######
 
-post header images are 680X500 px at 90 px/in.
-The font for the single letter is segoe UI heavy
+For a blog post, the data file must be in the same directory as
+the .Rmd file. Otherwise, the post will not build since it won't be
+able to find the file.
 
-To insert image, place it in static/img
-then use a link like this: ![caption](/img/x.png)
+For the tutorials, put the cafe data file in /static/data/ and
+then link to that in the tutorial using a full URL. That works
+since the file is not needed until the tutorial page is opened 
+and it will be present in the directory by then.
 
-## Header Captions
-
-cochise: caption: "Image credit: Cochise College Marketing Department"
-economy: caption: "Photo by Markus Spiske on *Unsplash*"
-ipeds: caption: "Image credit: Photo by delfi de la Rua on *Unsplash*"
-moodle: caption: "Image credit: Photo by rawpixel on *Unsplash*"
-R: caption: "Image credit: Photo by M. B. M. on *Unsplash*"
-Tutorial: caption: "Photo by Isis França on *Unsplash*"
-workforce: caption: "Image credit: Photo by George Self"
 
 ## Framewidget
 

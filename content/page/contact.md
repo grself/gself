@@ -1,10 +1,13 @@
 +++
 title = "Contact"
-date = 2015-04-03T02:13:50Z
-author = "My Name"
+date: 2018-08-21T08:00:00-07:00
+author = "George Self"
 description = "How to contact me."
 +++
 
 ## Contact
 
-Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.
+* Email: <selfg@cochise.edu>
+* Phone: (520) 335-2958
+* Office: Room A110, Downtown Center, Cochise College, Sierra Vista, Arizona, USA
+* Hours: Monday-Friday 8:30-4:30 or email for appointment
