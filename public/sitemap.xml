@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gself.com/tutorials/tutorial01/</loc>
+    <lastmod>2018-10-30T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gself.com/2015/07/23/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
@@ -15,11 +20,6 @@
   <url>
     <loc>https://gself.com/page/contact/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gself.com/project/my-awesome-project/</loc>
-    <lastmod>2014-11-18T02:13:50+00:00</lastmod>
   </url>
   
   <url>
@@ -85,12 +85,6 @@
   </url>
   
   <url>
-    <loc>https://gself.com/project/</loc>
-    <lastmod>2014-11-18T02:13:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://gself.com/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -98,7 +92,7 @@
   
   <url>
     <loc>https://gself.com/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2018-10-30T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,6 +117,12 @@
   <url>
     <loc>https://gself.com/tags/themes/</loc>
     <lastmod>2014-04-02T02:13:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tutorials/</loc>
+    <lastmod>2018-10-30T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
