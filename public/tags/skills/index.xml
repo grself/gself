@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skills on gself</title>
+    <link>https://gself.com/tags/skills/</link>
+    <description>Recent content in Skills on gself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>George Self</copyright>
+    <lastBuildDate>Fri, 21 Sep 2018 08:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://gself.com/tags/skills/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skills Gap Analysis</title>
+      <link>https://gself.com/2018/09/21/2018-09-21-skills-gap-analysis/</link>
+      <pubDate>Fri, 21 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/21/2018-09-21-skills-gap-analysis/</guid>
+      <description>I was privileged to attend the annual EMSI conference in Coeur D’Alene, ID, from September 10 to 12. EMSI is a company that provides labor market data that we use to analyze our programs. They gather data from a number of government sources, like the Census Bureau, and from job postings and resumes found in many different online locations. At the conference, I was able to attend sessions hosted by my colleagues in higher education and also sessions focused on other industries.</description>
+    </item>
+    
+  </channel>
+</rss>

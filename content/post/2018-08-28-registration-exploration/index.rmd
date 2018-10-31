@@ -2,6 +2,7 @@
 title: "Registration Exporation"
 author: "George Self"
 date: 2018-08-28T08:00:00-07:00
+description: "-- A bit of probing into our registration --"
 categories: ["cochise"]
 tags: ["courses","registration"]
 ---

@@ -2,50 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on gself</title>
-    <link>/post/</link>
+    <link>https://gself.com/post/</link>
     <description>Recent content in Posts on gself</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Fri, 31 Aug 2018 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 25 Sep 2018 08:00:00 -0700</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gself.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Top and Bottom Growth Occupations</title>
+      <link>https://gself.com/2018/09/25/2018-09-25-growth-occupations/</link>
+      <pubDate>Tue, 25 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/25/2018-09-25-growth-occupations/</guid>
+      <description>I’m continuing my exploration of EMSI occupational data and wanted to share another tidbit, the top and bottom occupations for Cochise County by the growth in job postings between 2013 and 2017. For example, “Grounds Maintenance Workers” had 328 job postings in 2013 and 456 in 2017 for an increase of 39%. Here are the top growth jobs (sorted by the percent change in postings).
+{&#34;</description>
+    </item>
+    
+    <item>
+      <title>Skills Gap Analysis</title>
+      <link>https://gself.com/2018/09/21/2018-09-21-skills-gap-analysis/</link>
+      <pubDate>Fri, 21 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/21/2018-09-21-skills-gap-analysis/</guid>
+      <description>I was privileged to attend the annual EMSI conference in Coeur D’Alene, ID, from September 10 to 12. EMSI is a company that provides labor market data that we use to analyze our programs. They gather data from a number of government sources, like the Census Bureau, and from job postings and resumes found in many different online locations. At the conference, I was able to attend sessions hosted by my colleagues in higher education and also sessions focused on other industries.</description>
+    </item>
+    
+    <item>
+      <title>University Transfer Student Characteristics</title>
+      <link>https://gself.com/2018/09/18/2018-09-18-univ-trans-char/</link>
+      <pubDate>Tue, 18 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/18/2018-09-18-univ-trans-char/</guid>
+      <description>The state of Arizona maintains a database that tracks students who transfer from one of our community colleges to one of our publicly-funded universities. That database includes a huge amount of information about transfer students and from time-to-time, I’ll share something from that database in my blog. For today, the following table lists some general characteristics about our transfer students over the past five years.
+Characteristics12-1313-1414-1515-1616-1717-18ChangeTotal102671050710696108211085310257-0.</description>
+    </item>
+    
+    <item>
+      <title>Exploring Intelliboard</title>
+      <link>https://gself.com/2018/09/14/2018-09-14-exploring-intelliboard/</link>
+      <pubDate>Fri, 14 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/14/2018-09-14-exploring-intelliboard/</guid>
+      <description>For a number of years, Cochise College has subscribed to Intelliboard, an analytics engine for our Moodle online learning management system. Intelliboard has a ton (that’s a statistics term) of analytics available and I’m just now starting to look at some of the data to determine how we can leverage that for our decision-makers. As an example, here is a graph that shows the number of page hits on our Moodle system over a one-week period.</description>
+    </item>
+    
+    <item>
+      <title>Math Transfer</title>
+      <link>https://gself.com/2018/09/11/2018-09-11-math-transfer/</link>
+      <pubDate>Tue, 11 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/11/2018-09-11-math-transfer/</guid>
+      <description>The state of Arizona maintains a database, named ASSIST, that contains information about courses completed by students in public colleges/universities in Arizona. For example, if a student completed MAT 220, Calculus I, at Cochise College and another student completed MAT 243, Discrete Math Structures, at Arizona State University information about both of those classes would be stored in the ASSIST database. In addition, all of the classes completed by any Arizona student can be found so it is possible to “follow” Cochise College students to the University to see how well they are doing and, of course, how well we are doing in teaching those subjects.</description>
+    </item>
+    
+    <item>
+      <title>Registration vs. Unemployment</title>
+      <link>https://gself.com/2018/09/07/2018-09-07-registration-vs-unemployment/</link>
+      <pubDate>Fri, 07 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/07/2018-09-07-registration-vs-unemployment/</guid>
+      <description>There is a common belief among community college administrators that as unemployment rates increase the number of registrations for classes at the community college also increase. The idea is that students who are unemployed look to a community college for new training opportunities that may lead to future employment.
+I wanted to look at that concept and created the following visualization to explore the idea.</description>
+    </item>
+    
+    <item>
+      <title>Continuous Improvement</title>
+      <link>https://gself.com/2018/09/04/2018-09-04-continuous-improvement/</link>
+      <pubDate>Tue, 04 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/04/2018-09-04-continuous-improvement/</guid>
+      <description>Far too often, strategic planning is a process that requires thousands of hours from scores of staff members to produce a massive document that ends up decorating the president’s bookshelf with very little practical application. Strategic plans in higher education are typically very comprehensive and unworkable, attempting to consolidate strategies for every facet of the college operations. Cochise College undertakes strategic planning from a different perspective. Our senior leadership is determined that it is far better to find just one goal that can move the proverbial needle within about a year, then select another goal for the next year.</description>
+    </item>
+    
+    <item>
       <title>About Correlation</title>
-      <link>/2018/08/31/2018-08-31-about-correlation/</link>
+      <link>https://gself.com/2018/08/31/2018-08-31-about-correlation/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>/2018/08/31/2018-08-31-about-correlation/</guid>
+      <guid>https://gself.com/2018/08/31/2018-08-31-about-correlation/</guid>
       <description>One of the main preoccupations for data researchers is to attempt to find some sort of correlation, or relationship, between two or more attributes of a data frame. The calculated correlation is a number between -1.0 and +1.0 where correlations close to 0.0 are very weak while correlations near the extremes are strong. The type of correlation that can be calculated is dependent on the type of data being compared since the process for categorical data is fundamentally different than that for continuous data.</description>
     </item>
     
     <item>
       <title>Registration Exporation</title>
-      <link>/2018/08/28/2018-08-28-registration-exploration/</link>
+      <link>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</link>
       <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>/2018/08/28/2018-08-28-registration-exploration/</guid>
+      <guid>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</guid>
       <description>Fall 2018 Registrations by DivisionFor Fall 2018, the total number of registrations per division as of August 24, 2018, is listed in the following table.
 DivRegsLiberal Arts5180Business/Technology2395Math/Sciences2157Nursing and Allied Health1222This post uses several different R techniques to explore the registrations for the fall 2018 semester.</description>
     </item>
     
     <item>
       <title>Introduction to Our IPEDS Peers</title>
-      <link>/2018/08/24/2018-08-24-intro-to-ipeds/</link>
+      <link>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</link>
       <pubDate>Fri, 24 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>/2018/08/24/2018-08-24-intro-to-ipeds/</guid>
+      <guid>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</guid>
       <description>IPEDS Peer ComparisonFor my first blog post, I decided to take a look at a data extract from the Integrated Postsecondary Education System (IPEDS) data made available to Cochise College by the National Center for Education Statistics (NCES). All colleges and universities in the United States submit a huge amount of data to the IPEDS database every year so this is a vast repository of data about the entire higher education community.</description>
     </item>
     
     <item>
       <title>Moving Day!</title>
-      <link>/2018/08/21/2018-08-21-moving-day/</link>
+      <link>https://gself.com/2018/08/21/2018-08-21-moving-day/</link>
       <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>/2018/08/21/2018-08-21-moving-day/</guid>
+      <guid>https://gself.com/2018/08/21/2018-08-21-moving-day/</guid>
       <description>The Start of Something Big!I was recently transferred from the Cochise College Institutional Research department to Special Assistant to the Provost. In this new role, I have been given a good bit of freedom to explore the college’s data and look for interesting relationships and other facts. I have a number of tools available to me, including SQL, R, Tableau, and Rapid-Miner. However, for simplicity, I’ve decided to focus the lion’s share of my time and talent (at least at first) on R and use the various R tools (like ggplot, plotly, and shiny) to explore and analyze data.</description>
     </item>
     

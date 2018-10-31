@@ -1,0 +1,32 @@
+---
+title: "Exploring Intelliboard"
+author: "George Self"
+date: 2018-09-14T08:00:00-07:00
+description: "-- A first look at the Moodle Intelliboard dashboard --"
+categories: ["moodle"]
+tags: ["access","courses"]
+---
+
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(tidyverse)
+library(here)
+library(ggplot2)
+library(plotly)
+
+# Set the rproj home directory
+here::here()
+```
+
+For a number of years, Cochise College has subscribed to Intelliboard, an analytics engine for our Moodle online learning management system. Intelliboard has a ton (that’s a statistics term) of analytics available and I’m just now starting to look at some of the data to determine how we can leverage that for our decision-makers. As an example, here is a graph that shows the number of page hits on our Moodle system over a one-week period. 
+
+![](/media/180911_access.png)
+
+Note: the above graph indicates the number of page views (“hits”) students make in class, not how many students accessed a class. We do not have 30,000 students attempting to sign in on Tuesday evening, but we do have a couple thousand who would be clicking around in their courses during that time.
+
+As another graphic, here are the aggregate visits to the site by day and time.
+
+![](/media/180911_aggregate.png)
+
+Most instructors believe, I think, that students tend to work on classes on Sunday evening, and, of course, some do. However, these graphs make it clear that the most common times to work on classes are Tuesday, Wednesday, and Thursday afternoon and evening. Perhaps that information would help inform instructors' decisions about when to make assignments due. For a class that has a "heavy" load, it may be reasonable to break up those assignments so some are due on Friday and some are due on Monday, encouraging students to work on them during the mid-week and again on weekends.

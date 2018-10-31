@@ -158,7 +158,7 @@ ex() %>% check_object("M") %>% check_equal()
 ex() %>% check_object("N") %>% check_equal()
 ex() %>% check_object("P") %>% check_equal()
 
-success_msg("You can use R to calculate both simple and complex math problems!")
+success_msg("Good Work! Now you can use R to calculate both simple and complex math problems!")
 
 ```
 

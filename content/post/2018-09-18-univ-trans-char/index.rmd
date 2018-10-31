@@ -1,0 +1,64 @@
+---
+title: "University Transfer Student Characteristics"
+author: "George Self"
+date: 2018-09-18T08:00:00-07:00
+description: "-- Some demographics for our students transferring to the university --"
+categories: ["cochise"]
+tags: ["transfer","university"]
+---
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(tidyverse)
+library(here)
+library(kableExtra)
+
+# Set some defaults for Knitr
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  strip.white = TRUE,
+  comment = "#>",
+  out.width = "65%",
+  message=FALSE,
+  warnings=FALSE
+)
+options(knitr.table.format = "html")
+
+
+# Set the rproj home directory
+here::here()
+```
+
+
+The state of Arizona maintains a database that tracks students who transfer from one of our community colleges to one of our publicly-funded universities. That database includes a huge amount of information about transfer students and from time-to-time, I'll share something from that database in my blog. For today, the following table lists some general characteristics about our transfer students over the past five years.
+
+```{r procTable, echo=FALSE, message=FALSE, warning=FALSE}
+
+# First, find all records in a selected discipline
+df <- read_csv("transfer.csv") %>%
+  replace(., is.na(.), "")
+
+df %>%
+  kable("html", align = c("l","r","r","r","r","r","r","r")) %>%
+    kable_styling(bootstrap_options = "striped",
+                full_width = F,
+                position = "center") %>%
+    row_spec(row = 1, 
+             bold = TRUE,
+             color = "#FFFFFF",
+             background = "#1e4d99") %>%
+    row_spec(row = 2, 
+             bold = TRUE, 
+             background = "#d2dff4") %>%
+    row_spec(row = 12, 
+             bold = TRUE, 
+             background = "#d2dff4") %>%
+    row_spec(row = 15, 
+             bold = TRUE, 
+             background = "#d2dff4") %>%
+    row_spec(row = 20, 
+             bold = TRUE, 
+             background = "#d2dff4")
+                
+```
+

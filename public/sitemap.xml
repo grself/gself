@@ -3,106 +3,219 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/08/31/2018-08-31-about-correlation/</loc>
+    <loc>https://gself.com/2018/09/25/2018-09-25-growth-occupations/</loc>
+    <lastmod>2018-09-25T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/09/21/2018-09-21-skills-gap-analysis/</loc>
+    <lastmod>2018-09-21T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/09/18/2018-09-18-univ-trans-char/</loc>
+    <lastmod>2018-09-18T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/09/14/2018-09-14-exploring-intelliboard/</loc>
+    <lastmod>2018-09-14T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/09/11/2018-09-11-math-transfer/</loc>
+    <lastmod>2018-09-11T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/09/07/2018-09-07-registration-vs-unemployment/</loc>
+    <lastmod>2018-09-07T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/09/04/2018-09-04-continuous-improvement/</loc>
+    <lastmod>2018-09-04T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/2018/08/31/2018-08-31-about-correlation/</loc>
     <lastmod>2018-08-31T08:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/08/28/2018-08-28-registration-exploration/</loc>
+    <loc>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</loc>
     <lastmod>2018-08-28T08:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/08/24/2018-08-24-intro-to-ipeds/</loc>
+    <loc>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</loc>
     <lastmod>2018-08-24T08:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/page/about/</loc>
+    <loc>https://gself.com/page/about/</loc>
     <lastmod>2018-08-21T08:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/page/contact/</loc>
+    <loc>https://gself.com/page/contact/</loc>
     <lastmod>2018-08-21T08:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/08/21/2018-08-21-moving-day/</loc>
+    <loc>https://gself.com/2018/08/21/2018-08-21-moving-day/</loc>
     <lastmod>2018-08-21T08:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/correlation/</loc>
+    <loc>https://gself.com/tags/access/</loc>
+    <lastmod>2018-09-14T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/correlation/</loc>
     <lastmod>2018-08-31T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/correlogram/</loc>
+    <loc>https://gself.com/tags/correlogram/</loc>
     <lastmod>2018-08-31T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/courses/</loc>
-    <lastmod>2018-08-28T08:00:00-07:00</lastmod>
+    <loc>https://gself.com/tags/courses/</loc>
+    <lastmod>2018-09-14T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tutorials/0010-intro-to-r/</loc>
+    <loc>https://gself.com/tags/cte/</loc>
+    <lastmod>2018-09-07T08:00:00-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/ipeds/</loc>
+    <loc>https://gself.com/tags/employment/</loc>
+    <lastmod>2018-09-25T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/gap/</loc>
+    <lastmod>2018-09-21T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/growth/</loc>
+    <lastmod>2018-09-25T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tutorials/0010-intro-to-r/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/ipeds/</loc>
     <lastmod>2018-08-31T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/page/</loc>
+    <loc>https://gself.com/tags/math/</loc>
+    <lastmod>2018-09-11T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/page/</loc>
     <lastmod>2018-08-21T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/peers/</loc>
+    <loc>https://gself.com/tags/peers/</loc>
     <lastmod>2018-08-31T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2018-08-31T08:00:00-07:00</lastmod>
+    <loc>https://gself.com/tags/planning/</loc>
+    <lastmod>2018-09-04T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/registration/</loc>
-    <lastmod>2018-08-28T08:00:00-07:00</lastmod>
+    <loc>https://gself.com/post/</loc>
+    <lastmod>2018-09-25T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2018-08-31T08:00:00-07:00</lastmod>
+    <loc>https://gself.com/tags/registration/</loc>
+    <lastmod>2018-09-07T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/tutorial/</loc>
+    <loc>https://gself.com/tags/resume/</loc>
+    <lastmod>2018-09-21T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tutorials/</loc>
+    <loc>https://gself.com/tags/skills/</loc>
+    <lastmod>2018-09-21T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-08-31T08:00:00-07:00</lastmod>
+    <loc>https://gself.com/tags/strategic/</loc>
+    <lastmod>2018-09-04T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/success/</loc>
+    <lastmod>2018-09-11T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/</loc>
+    <lastmod>2018-09-14T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/transfer/</loc>
+    <lastmod>2018-09-18T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/tutorial/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tutorials/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/tags/university/</loc>
+    <lastmod>2018-09-18T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gself.com/</loc>
+    <lastmod>2018-09-25T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   

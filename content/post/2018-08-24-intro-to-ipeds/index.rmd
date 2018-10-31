@@ -1,9 +1,8 @@
 ---
 title: "Introduction to Our IPEDS Peers"
-subtitle: ""
-summary: "This is a group of colleges that are similar to Cochise."
 author: "George Self"
 date: 2018-08-24T08:00:00-07:00
+description: "-- A group of colleges that are similar to Cochise --"
 categories: ["ipeds"]
 tags: ["peers"]
 ---

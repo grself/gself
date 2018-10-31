@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Success on gself</title>
+    <link>https://gself.com/tags/success/</link>
+    <description>Recent content in Success on gself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>George Self</copyright>
+    <lastBuildDate>Tue, 11 Sep 2018 08:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://gself.com/tags/success/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Math Transfer</title>
+      <link>https://gself.com/2018/09/11/2018-09-11-math-transfer/</link>
+      <pubDate>Tue, 11 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/09/11/2018-09-11-math-transfer/</guid>
+      <description>The state of Arizona maintains a database, named ASSIST, that contains information about courses completed by students in public colleges/universities in Arizona. For example, if a student completed MAT 220, Calculus I, at Cochise College and another student completed MAT 243, Discrete Math Structures, at Arizona State University information about both of those classes would be stored in the ASSIST database. In addition, all of the classes completed by any Arizona student can be found so it is possible to “follow” Cochise College students to the University to see how well they are doing and, of course, how well we are doing in teaching those subjects.</description>
+    </item>
+    
+  </channel>
+</rss>
