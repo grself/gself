@@ -2,22 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on gself</title>
-    <link>/tags/tutorial/</link>
+    <link>https://gself.com/tags/tutorial/</link>
     <description>Recent content in Tutorial on gself</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Mon, 29 Oct 2018 08:00:00 -0700</lastBuildDate>
     
-	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gself.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction to R</title>
-      <link>/tutorials/181029-intro-to-r/</link>
-      <pubDate>Mon, 29 Oct 2018 08:00:00 -0700</pubDate>
+      <link>https://gself.com/tutorials/0010-intro-to-r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tutorials/181029-intro-to-r/</guid>
+      <guid>https://gself.com/tutorials/0010-intro-to-r/</guid>
       <description>Welcome to R!Statistical analysis is the core of nearly all research projects and researchers have a wide variety of statistical tools that they can use, like SPSS and SAS. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces R, a powerful, open source statistical analysis program that is available free of charge. But before diving into a statistics package there is one important background fundamental that must be covered: data.</description>
     </item>
     

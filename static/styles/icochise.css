@@ -4,9 +4,10 @@
 
 /* original colors: F03838 - 303030 - FEFEFE */
 :root{
-  --primary: #3838FF; /* orig: #F03838 */
-  --secondary: #303066; /* orig: #303030 */
+  --primary: #333366; /* orig: #F03838 */
+  --secondary: #000033; /* orig: #303030 */
   --background: #FEFEFE; /* orig: #FEFEFE */
+  --hover: #FFAAAA;
 }
 
 
@@ -203,7 +204,7 @@ table {
     padding: 10px 12px;
     text-transform: uppercase;
 
-    &:hover { background: var(--primary); }
+    &:hover { background: var(--hover); }
 }
 
 .button-square {
@@ -214,7 +215,7 @@ table {
     margin: 0 0 0 10px;
     padding: 3px 8px 4px;
 
-    &:hover { background: var(--secondary); }
+    &:hover { background: var(--hover); }
 }
 
 .error {
@@ -254,7 +255,7 @@ table {
         color: #FEFEFE;
         padding: 5px 10px 6px;
 
-        &:hover { background: var(--secondary); }
+        &:hover { background: var(--hover); }
     }
 }
 .site-logo {
@@ -275,7 +276,7 @@ table {
     font-weight: 700;
     margin: 0 10px;
 
-    a:hover { color: #424242; }
+    a:hover { color: var(--hover); }
 }
 
 /* ============================================================ */
@@ -307,14 +308,14 @@ table {
 
 .post-date,
 .blog-description {
-    color: #AEADAD;
+    color: var(--primary);
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
     margin: 25px 0 0;
 
-    a { color: #AEADAD; }
-    a:hover { color: var(--primary); }
+    a { color: var(--primary); }
+    a:hover { color: var(--hover); }
 
     &:after {
         border-bottom: 1px dotted var(--secondary);
@@ -379,7 +380,7 @@ table {
         text-align: center;
     }
 
-    a:hover { background: var(--secondary); }
+    a:hover { background: var(--hover); }
 }
 
 .post-navigation {
@@ -430,7 +431,7 @@ table {
         padding: 20px 5px;
 
         &:hover {
-            background: #FCF5F5;
+            background: var(--secondary);
             color: var(--primary);
             padding: 20px 12px;
 
@@ -442,7 +443,7 @@ table {
 .post-stub-tag {
     background: var(--secondary);
     border-radius: 3px;
-    color: #FFF;
+    color: var(--primary);
     float: right;
     font-size: 10px;
     margin: 7px 0 0;
