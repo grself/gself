@@ -80,12 +80,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-10-29T08:00:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/registration/</loc>
     <lastmod>2018-08-28T08:00:00-07:00</lastmod>
     <priority>0</priority>
@@ -105,6 +99,12 @@
   
   <url>
     <loc>/tutorials/</loc>
+    <lastmod>2018-10-29T08:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2018-10-29T08:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
