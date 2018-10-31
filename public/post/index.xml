@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on gself</title>
-    <link>https://gself.com/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on gself</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
     <lastBuildDate>Fri, 31 Aug 2018 08:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://gself.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Correlation</title>
-      <link>https://gself.com/2018/08/31/2018-08-31-about-correlation/</link>
+      <link>/2018/08/31/2018-08-31-about-correlation/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/31/2018-08-31-about-correlation/</guid>
+      <guid>/2018/08/31/2018-08-31-about-correlation/</guid>
       <description>One of the main preoccupations for data researchers is to attempt to find some sort of correlation, or relationship, between two or more attributes of a data frame. The calculated correlation is a number between -1.0 and +1.0 where correlations close to 0.0 are very weak while correlations near the extremes are strong. The type of correlation that can be calculated is dependent on the type of data being compared since the process for categorical data is fundamentally different than that for continuous data.</description>
     </item>
     
     <item>
       <title>Registration Exporation</title>
-      <link>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</link>
+      <link>/2018/08/28/2018-08-28-registration-exploration/</link>
       <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</guid>
+      <guid>/2018/08/28/2018-08-28-registration-exploration/</guid>
       <description>Fall 2018 Registrations by DivisionFor Fall 2018, the total number of registrations per division as of August 24, 2018, is listed in the following table.
 DivRegsLiberal Arts5180Business/Technology2395Math/Sciences2157Nursing and Allied Health1222This post uses several different R techniques to explore the registrations for the fall 2018 semester.</description>
     </item>
     
     <item>
       <title>Introduction to Our IPEDS Peers</title>
-      <link>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</link>
+      <link>/2018/08/24/2018-08-24-intro-to-ipeds/</link>
       <pubDate>Fri, 24 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</guid>
+      <guid>/2018/08/24/2018-08-24-intro-to-ipeds/</guid>
       <description>IPEDS Peer ComparisonFor my first blog post, I decided to take a look at a data extract from the Integrated Postsecondary Education System (IPEDS) data made available to Cochise College by the National Center for Education Statistics (NCES). All colleges and universities in the United States submit a huge amount of data to the IPEDS database every year so this is a vast repository of data about the entire higher education community.</description>
     </item>
     
     <item>
       <title>Moving Day!</title>
-      <link>https://gself.com/2018/08/21/2018-08-21-moving-day/</link>
+      <link>/2018/08/21/2018-08-21-moving-day/</link>
       <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/21/2018-08-21-moving-day/</guid>
+      <guid>/2018/08/21/2018-08-21-moving-day/</guid>
       <description>The Start of Something Big!I was recently transferred from the Cochise College Institutional Research department to Special Assistant to the Provost. In this new role, I have been given a good bit of freedom to explore the college’s data and look for interesting relationships and other facts. I have a number of tools available to me, including SQL, R, Tableau, and Rapid-Miner. However, for simplicity, I’ve decided to focus the lion’s share of my time and talent (at least at first) on R and use the various R tools (like ggplot, plotly, and shiny) to explore and analyze data.</description>
     </item>
     

@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on gself</title>
-    <link>https://gself.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on gself</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
     <lastBuildDate>Fri, 31 Aug 2018 08:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://gself.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Correlation</title>
-      <link>https://gself.com/tags/correlation/</link>
+      <link>/tags/correlation/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tags/correlation/</guid>
+      <guid>/tags/correlation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Correlogram</title>
-      <link>https://gself.com/tags/correlogram/</link>
+      <link>/tags/correlogram/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tags/correlogram/</guid>
+      <guid>/tags/correlogram/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Courses</title>
-      <link>https://gself.com/tags/courses/</link>
+      <link>/tags/courses/</link>
       <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tags/courses/</guid>
+      <guid>/tags/courses/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ipeds</title>
-      <link>https://gself.com/tags/ipeds/</link>
+      <link>/tags/ipeds/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tags/ipeds/</guid>
+      <guid>/tags/ipeds/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Peers</title>
-      <link>https://gself.com/tags/peers/</link>
+      <link>/tags/peers/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tags/peers/</guid>
+      <guid>/tags/peers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Registration</title>
-      <link>https://gself.com/tags/registration/</link>
+      <link>/tags/registration/</link>
       <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/tags/registration/</guid>
+      <guid>/tags/registration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>https://gself.com/tags/tutorial/</link>
+      <link>/tags/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gself.com/tags/tutorial/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     

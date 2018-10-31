@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gself</title>
-    <link>https://gself.com/</link>
+    <link>/</link>
     <description>Recent content on gself</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
     <lastBuildDate>Fri, 31 Aug 2018 08:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://gself.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Correlation</title>
-      <link>https://gself.com/2018/08/31/2018-08-31-about-correlation/</link>
+      <link>/2018/08/31/2018-08-31-about-correlation/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/31/2018-08-31-about-correlation/</guid>
+      <guid>/2018/08/31/2018-08-31-about-correlation/</guid>
       <description>One of the main preoccupations for data researchers is to attempt to find some sort of correlation, or relationship, between two or more attributes of a data frame. The calculated correlation is a number between -1.0 and +1.0 where correlations close to 0.0 are very weak while correlations near the extremes are strong. The type of correlation that can be calculated is dependent on the type of data being compared since the process for categorical data is fundamentally different than that for continuous data.</description>
     </item>
     
     <item>
       <title>Registration Exporation</title>
-      <link>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</link>
+      <link>/2018/08/28/2018-08-28-registration-exploration/</link>
       <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</guid>
+      <guid>/2018/08/28/2018-08-28-registration-exploration/</guid>
       <description>Fall 2018 Registrations by DivisionFor Fall 2018, the total number of registrations per division as of August 24, 2018, is listed in the following table.
 DivRegsLiberal Arts5180Business/Technology2395Math/Sciences2157Nursing and Allied Health1222This post uses several different R techniques to explore the registrations for the fall 2018 semester.</description>
     </item>
     
     <item>
       <title>Introduction to Our IPEDS Peers</title>
-      <link>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</link>
+      <link>/2018/08/24/2018-08-24-intro-to-ipeds/</link>
       <pubDate>Fri, 24 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/24/2018-08-24-intro-to-ipeds/</guid>
+      <guid>/2018/08/24/2018-08-24-intro-to-ipeds/</guid>
       <description>IPEDS Peer ComparisonFor my first blog post, I decided to take a look at a data extract from the Integrated Postsecondary Education System (IPEDS) data made available to Cochise College by the National Center for Education Statistics (NCES). All colleges and universities in the United States submit a huge amount of data to the IPEDS database every year so this is a vast repository of data about the entire higher education community.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://gself.com/page/about/</link>
+      <link>/page/about/</link>
       <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/page/about/</guid>
+      <guid>/page/about/</guid>
       <description>About I&amp;rsquo;m more than 60 years old but am not retired. I have been an elementary school teacher, an EMT, an electronics technician, and am currently a Dean at a community college. I also teach college classes in digital logic, research, and technical communication. Five Cocker Spaniels own me and my wife and on weekends I change into “Parson George” to lead ghost tours in nearby Tombstone, Arizona.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://gself.com/page/contact/</link>
+      <link>/page/contact/</link>
       <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/page/contact/</guid>
+      <guid>/page/contact/</guid>
       <description> Contact  Email: selfg@cochise.edu Phone: (520) 335-2958 Office: Room A110, Downtown Center, Cochise College, Sierra Vista, Arizona, USA Hours: Monday-Friday 8:30-4:30 or email for appointment  </description>
     </item>
     
     <item>
       <title>Moving Day!</title>
-      <link>https://gself.com/2018/08/21/2018-08-21-moving-day/</link>
+      <link>/2018/08/21/2018-08-21-moving-day/</link>
       <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/21/2018-08-21-moving-day/</guid>
+      <guid>/2018/08/21/2018-08-21-moving-day/</guid>
       <description>The Start of Something Big!I was recently transferred from the Cochise College Institutional Research department to Special Assistant to the Provost. In this new role, I have been given a good bit of freedom to explore the college’s data and look for interesting relationships and other facts. I have a number of tools available to me, including SQL, R, Tableau, and Rapid-Miner. However, for simplicity, I’ve decided to focus the lion’s share of my time and talent (at least at first) on R and use the various R tools (like ggplot, plotly, and shiny) to explore and analyze data.</description>
     </item>
     
     <item>
       <title>Introduction to R</title>
-      <link>https://gself.com/tutorials/0010-intro-to-r/</link>
+      <link>/tutorials/0010-intro-to-r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gself.com/tutorials/0010-intro-to-r/</guid>
+      <guid>/tutorials/0010-intro-to-r/</guid>
       <description>Welcome to R!Statistical analysis is the core for nearly all research projects and researchers have a wide variety of statistical tools that they can use, like SPSS and SAS. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces R, a powerful, open source statistical analysis program that is available free of charge. But before diving into a statistics package there is one important background fundamental that must be covered: data.</description>
     </item>
     

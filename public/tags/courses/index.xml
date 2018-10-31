@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on gself</title>
-    <link>https://gself.com/tags/courses/</link>
+    <link>/tags/courses/</link>
     <description>Recent content in Courses on gself</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
     <lastBuildDate>Tue, 28 Aug 2018 08:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://gself.com/tags/courses/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/courses/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Registration Exporation</title>
-      <link>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</link>
+      <link>/2018/08/28/2018-08-28-registration-exploration/</link>
       <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/28/2018-08-28-registration-exploration/</guid>
+      <guid>/2018/08/28/2018-08-28-registration-exploration/</guid>
       <description>Fall 2018 Registrations by DivisionFor Fall 2018, the total number of registrations per division as of August 24, 2018, is listed in the following table.
 DivRegsLiberal Arts5180Business/Technology2395Math/Sciences2157Nursing and Allied Health1222This post uses several different R techniques to explore the registrations for the fall 2018 semester.</description>
     </item>

@@ -5,9 +5,9 @@ Animation for the growth of the virtual campus
 Present one or two AZ Assist reports
 Tap more reports from EMSI
 
-## I use the Hugo "Academic" theme
+## I use the Hugo "Ghostwriter" theme
 
-###### File Header ######
+###### YAML Header ######
 
 ---
 title: "x"
@@ -16,6 +16,9 @@ date: 2018-08-21T08:00:00-07:00
 categories: ["cochise"]
 tags: []
 ---
+
+###### BLOG Default Library Block ######
+
 
 ```{r setup, include=FALSE}
 # Load some libraries
@@ -30,7 +33,36 @@ library(DT)
 here::here()
 ```
 
-###### End of file header ######
+###### Tutorial Default Library Block ######
+
+---
+title: "Introduction to R"
+author: "George Self"
+#date: 2018-10-29T08:00:00-07:00
+description: "-- Beginning steps for new R users --"
+categories: ["r"]
+tags: ["tutorial"]
+---
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(here)
+
+# Set the rproj home directory
+here::here()
+
+# Turn on the DataCamp Light interactive tools
+tutorial::go_interactive()
+
+```
+
+###### Style Guide ######
+The word *R* is italicized.
+*R* commands are set off by single back-ticks: `str(cafe)`
+Data frame names and variables are italicized 
+"Data frame" is two words, not one
+
+
 
 ###### Data Files ######
 
@@ -39,22 +71,16 @@ the .Rmd file. Otherwise, the post will not build since it won't be
 able to find the file.
 
 For the tutorials, put the cafe data file in /static/data/ and
-then link to that in the tutorial using a full URL. That works
+then link to that in the tutorial using the full URL. That works
 since the file is not needed until the tutorial page is opened 
 and it will be present in the directory by then.
 
 
-## Framewidget
-
-All htmlwidgets need to be wrapped in a framewidget.
-Note: datatables seem to fit best with a pagelength of 7
-
-library(widgetframe)
-f1 <- datatable(names, options = list(pageLength = 7))
-frameWidget(f1)
+###### R Tools  ######
 
 
 ## Bar Plot Setup
+
 ggplot(data = t, aes(x = name, y = tuition)) +
   geom_bar(stat = "identity", aes(fill = tuition)) +
   scale_x_discrete(limits = t$name[order(-t$tuition)]) +
@@ -63,6 +89,7 @@ ggplot(data = t, aes(x = name, y = tuition)) +
   labs(title = "Tuition Comparison", x = "College", y = "Tuition") +
   guides(fill=guide_legend(title="Tuition")) +
   coord_flip()
+
 
 ## plotly 
 
@@ -79,9 +106,21 @@ p <- ggplot(data = reg02, aes(x = Tuition, y = Hispanic)) +
 
 ggplotly(p)
 
+
+## Framewidget
+
+All htmlwidgets (see next) need to be wrapped in a framewidget.
+Note: datatables seem to fit best with a pagelength of 7
+
+library(widgetframe)
+f1 <- datatable(names, options = list(pageLength = 7))
+frameWidget(f1)
+
+
 ## HTMLWIDGETS
 
 (see htmlwidgets.org)
+
 
 ## Kable
 
@@ -96,10 +135,23 @@ df %>%
              background = "#1e4d99")
 
 
+###### GIT Notes ######
 
-##Directory
+Open the GIT shell
+Navigate to the GIT directory of interest on the e:/ drive
 
-### Data frames
+cd /e/GitHub/gself
+git add *
+git commit -m "commit message"
+git push origin master
+
+Note: you'll get a lot of warnings about line endings. As the files are uploaded the line ending are changed to CRLF (Unix-style) rather than just CR (Windows-style). That doesn't seem to hurt anything.
+
+
+
+###### Directory ######
+
+## Data frames
 * age_eth_sex.csv
 * CrsProgOrig.csv
 * enr_hist_all.csv
@@ -110,7 +162,7 @@ df %>%
 * transfer.csv
 * unemp.csv
 
-### R Functions
+## R Functions
 * correlogram
   * 180831: About Correlation
   * 181012: Regression
@@ -127,7 +179,7 @@ df %>%
   * 181009: Explore Data
 * str(): 181009: Explore Data
 
-### Visualizations
+## Visualizations
 * data table (DT)
   * 181019: Discipline Success
   * 181030: Splom
