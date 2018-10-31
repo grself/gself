@@ -25,7 +25,7 @@ tutorial::go_interactive()
 ```
 # Welcome to R!
 
-Statistical analysis is the core of nearly all research projects and researchers have a wide variety of statistical tools that they can use, like *SPSS* and *SAS*. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces R, a powerful, open source statistical analysis program that is available free of charge. But before diving into a statistics package there is one important background fundamental that must be covered: data.
+Statistical analysis is the core for nearly all research projects and researchers have a wide variety of statistical tools that they can use, like *SPSS* and *SAS*. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces R, a powerful, open source statistical analysis program that is available free of charge. But before diving into a statistics package there is one important background fundamental that must be covered: data.
 
 ## Types of Data
 
