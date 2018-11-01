@@ -182,7 +182,7 @@ For this analysis, I wanted to determine if tuition has an influence on the ethn
 
 Two simple linear models will be developed with *R* and then those models will be used to predict the percent of Hispanic and White students when given a specific tuition. 
 
-The general regression formula is $\hat{y}=\beta_1x+\beta_0$ where the output ($\hat{y}$) is determined by two parameters of the model ($\beta$) and the input ($x$). As an example, if $\beta_1$ is 2 and $\beta_0$ is 1 then an input ($x$) of 1 would yield an output ($\hat{y}$) of 3.
+The general regression formula is \(\hat{y}=\beta_1x+\beta_0\) where the output (\(\hat{y}\) is determined by two parameters of the model (\(\beta\) and the input (\(x\). As an example, if \(\beta_1\) is 2 and \(\beta_0\) is 1 then an input (\(x\) of 1 would yield an output (\(\hat{y}\) of 3.
 
 ```{r lmod1Hisp, echo=FALSE}
 
@@ -201,7 +201,7 @@ x1 <- 3000.0
 ```
 
 
-To create the regression model, I focused first on the relationship between the percentage of Hispanic students (the dependent variable) and tuition (the independent variable). *R* has a linear model function, *lm(Hispanic ~ Tuition)* that was used to determine the values of $\beta_0$ and $\beta_1$. Plugging those values into the regression formula yielded $\hat{y}=-0.011x+58.13$. Now, to calculate the predicted percent of Hispanic students for a tuition of \$3,000, plug that number in for $x$ and solve the equation (it comes out to 25.21%). 
+To create the regression model, I focused first on the relationship between the percentage of Hispanic students (the dependent variable) and tuition (the independent variable). *R* has a linear model function, *lm(Hispanic ~ Tuition)* that was used to determine the values of \(\beta_0\) and \(\beta_1\). Plugging those values into the regression formula yielded \(\hat{y}=-0.011x+58.13\). Now, to calculate the predicted percent of Hispanic students for a tuition of $3,000, plug that number in for \(x\) and solve the equation (it comes out to 25.21%). 
 
 It may be easier to visualize this relationship with a scatter plot that shows the relationship between those two variables along with a line of best fit for the data.
 
@@ -268,7 +268,7 @@ x2 <- 3000.0
 ```
 
 
-For example, on the plot of white students, if the mouse is hovered over the line above the value of \$3000 for Tuition then the percentage of white students is 47.
+For example, on the plot of white students, if the mouse is hovered over the line above the value of $3000 for Tuition then the percentage of white students is 47.
 
 While this is an interesting exercise, any sort of cause and effect discussion should  be avoided. As the percentage of white students increase is there pressure to increase tuition (perhaps due to services demanded by the student body)? Or does higher tuition tend to deter students of color? Of course, there are many other factors not considered in this simple analysis, like the geographic community where the college is located or the availability of financial aid.
 
@@ -301,7 +301,7 @@ corrgram(reg03,
 
 ```
 
-The general multiple regression formula is $\hat{y}=\beta_1x_1+\beta_2x_2+\beta_0$ where the output ($\hat{y}$) is determined by three parameters of the model ($\beta$) and the inputs ($x$). For the revenue regression, there are three input variables (tuition, state, local) that is used to predict the core revenue. In *R* the formula is *lm(Revenue ~ Tuition+State+Local)*
+The general multiple regression formula is \(\hat{y}=\beta_1x_1+\beta_2x_2+\beta_0\) where the output (\(\hat{y}\) is determined by three parameters of the model (\(\beta\) and the inputs (\(x\). For the revenue regression, there are three input variables (tuition, state, local) that is used to predict the core revenue. In *R* the formula is *lm(Revenue ~ Tuition+State+Local)*
 
 
 
@@ -325,7 +325,7 @@ x33 <- 42.0 #Local
 
 ```
 
-This is the regression formula that was generated from the IPEDS peer data. $\hat{y}=(962285*x_1)+(956919*x_2)+(1312015*x_3)+1953830$. That linear model was used to create the following scatter plot.
+This is the regression formula that was generated from the IPEDS peer data. \(\hat{y}=(962285*x_1)+(956919*x_2)+(1312015*x_3)+1953830\). That linear model was used to create the following scatter plot.
 
 ```{r ggplotPointMultReg, echo=FALSE}
 

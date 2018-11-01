@@ -12,7 +12,13 @@ The word *R* is italicized.
 *R* commands are set off by single back-ticks: `str(cafe)`
 Data frame names and variables are italicized 
 "Data frame" is two words, not one
+To create MathJax input: 
+\[...\] for a block
+\(...\) for inline
 
+The MathJax link for the header:
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
 
 ###### YAML Header ######
 
