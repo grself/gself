@@ -1,0 +1,187 @@
+---
+title: "About Data..."
+author: "George Self"
+date: 2018-10-09T08:00:00-07:00
+description: "-- A Few Observations About The Nature of Data --"
+categories: ["r"]
+tags: ["data","distribution"]
+---
+
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(tidyverse)
+library(here)
+library(ggplot2)
+library(plotly)
+library(moments)
+library(kableExtra)
+
+# Set the rproj home directory
+here::here()
+```
+
+While working with statistics it is vital to keep in mind the various types of data and sorts of statistical analysis that are appropriate for each type. For example, it is very common for people to report the "average" of a Likert scale item, but that is applying a continuous data method to an ordinal data variable and the result is of dubious value.
+
+There are several recognized data taxonomies and some are more appropriate for certain tasks than others. For example, a Perl programmer would use the data types that are available with that language while a statistics analyst would use the data types that make sense for the tests used in that field. For my work, I've found that three data types cover the analysis techniques that I commonly use and having only three makes my work simpler.
+
+## Continuous Data
+
+Continuous data are numeric values that exist along a sequence so one value can be compared to another. These data are integer or decimal numbers and are typically used for counts or measures – like a person's weight, a tree's height, or a car's speed. Continuous data are measured with scales that have equal divisions so the difference between any two values can be calculated. Continuous data are analyzed using a parametric test like ANOVA or t-test.
+
+## Nominal Data
+
+Nominal data group observations into a limited number of categories; for example, type of pet (cat, dog, bird, etc.) or place of residence (Arizona, California, etc.). The word "nominal" comes from the same root as "name" and this is a handy way to remember that these data are simply names for things. A special subset of nominal data is dichotomous data, which have only two possible values, like "yes/no." Nominal data are analyzed using a nonparametric test like Chi-squared or Cronbach's alpha.
+
+## Ordinal Data
+
+Ordinal data are categories, like nominal, but the categories have an implied order, which is why these data are called "ordinal." For example, consider the "star" ratings often used for movies. A five-star rating is obviously somehow better than a four-star rating, but it is impossible to statistically determine the difference between the two movies. One common type of ordinal data is generated with an "agree-disagree"" type of scale, like "I enjoy reading: Strongly Agree – Agree – Neutral – Disagree – Strongly Disagree." Ordinal data are analyzed using a nonparametric test, like Wilcoxon Signed Ranks or Mann-Whitney U.
+
+## Continuous Data Distributions
+
+Continuous data are distributed along a continuum and the shape of that distribution is critical to the types of analysis that can be performed. To better explain this concept, imagine a research project that gathered the age for each respondent. It would be expected that the ages would fall between about 20 and 80 (assuming children were not included in the project). However, if respondents were selected at random, it would be anticipated that there would be more people in the middle of the age group than at either extreme. As an example, the following plot was generated with random data but illustrates what a normal distribution for the ages of 1000 respondents could look like. Notice that more people are clustered around the age of 50 with fewer people at the extreme ages.
+
+```{r ageDistribution, echo=FALSE, message=FALSE, warning=FALSE}
+
+set.seed(1032) # for reproducable results, 1032 seems to give a good distribution
+
+# create a df with 1000 values
+df <- as.data.frame(rnorm(1000,50,7)) %>% # (n, mean, sd)
+  rename(age = 'rnorm(1000, 50, 7)')  
+
+# This is necessary to include an apostrophe in the title
+plotTitle <- expression("Plot of Respondent's Age")
+
+# Put this in a variable in case you want to use it for plotly or something
+p <- ggplot(df, aes(x = age)) +
+  geom_histogram(color = 'darkblue',
+                 fill = 'lightblue',
+                 binwidth = 3) +
+  labs(title = as.character(plotTitle),
+       x = 'Age',
+       y = 'Frequency') +
+  theme_classic()
+
+# Display the plot
+ggplotly(p)
+
+# This uses density instead of count for the histogram
+# It looks the same but the y-axis is scaled for density rather than count
+# geom_histogram(aes(y = ..density..),
+#                color = 'darkblue', 
+#                fill = 'lightblue',
+#                binwidth = 3)
+
+# This adds a density curve to the histogram
+# geom_density(alpha = .2,
+#               fill = '#FF6666')
+
+# This adds a mean line for age
+# p + geom_vline(aes(xintercept=mean(age)),
+#                color='blue', linetype='dashed', size=1)
+
+```
+
+
+The normal distribution is the one most commonly found in research, but there are others that are occasionally found. Here are a few of the most common distributions.
+
+* Normal. This is illustrated above and is sometimes called a "Gaussian" distribution. For most studies that include a random selection of respondents, it would be anticipated that continuous data like age or weight would be normally distributed.
+
+* Uniform. All values in a uniform distribution have an equal chance of appearance so the shape of the distribution is flat. If the "age" distribution above were uniformly distributed then there would be the same number of 30-year-olds as 50-year-olds and the top of each bar would be nearly the same (though some random variation is always expected).  
+
+* Binomial. This distribution indicates the probability of success when there are only two possible outcomes. For example, if someone flipped a coin 100 times there is a possibility that "heads" would come up zero times or 100 times, but neither of those extremes would be likely; however, there is a relatively high probability that "heads" would come up 50 times. The plot for a binomial distribution resembles a normal distribution but the plot shows the probability for one of two possible outcomes.
+
+* Poisson. This is a distribution that is used for time-series data. As an example, if a researcher were conducting a climate study and wanted to estimate the likelihood of a certain number of rainy days in a given month a Poisson distribution would be expected.
+
+* Logistic. This type of distribution resembles a normal distribution but has many outliers so the bell-shaped curve is flatter and more "spread out."
+
+* Cauchy. This type of distribution resembles a normal distribution but has few (or no) outliers the bell-shaped curve is sharper and more "bunched up."
+
+* Lognormal. This type of distribution is skewed toward the positive, that is, there are several extreme positive values that tend to extend the plot to the right.
+
+## Checking the Distribution
+
+It is easiest to work with continuous data that are normally distributed since most statistical tests assume a normal distribution. The question naturally comes up, then, about how to determine if a data set is normally distributed. One of the easiest methods is to plot the data and look at the plot. It may seem to be more art than science, but a normally distributed data frame has a characteristic bell-shaped curve. Consider the curve of 1000 random data points presented below.
+
+```{r normalTest, echo=FALSE, message=FALSE, warning=FALSE}
+
+set.seed(1006) # for reproducable results, 1032 seems to give a good distribution
+
+# create a df with 1000 values
+df2 <- as.data.frame(rnorm(1000, 100, 10)) %>% # (n, mean, sd)
+  rename(isNorm = 'rnorm(1000, 100, 10)')  
+
+# This is necessary to include an apostrophe in the title
+plotTitle <- expression("Testing the Normal Distribution")
+
+# Put this in a variable in case you want to use it for plotly or something
+p2 <- ggplot(df2, aes(x = isNorm)) +
+  geom_density(alpha = .5,
+              fill = '#FF6666') +
+  labs(title = as.character(plotTitle),
+       x = 'Value',
+       y = 'Percent') +
+  theme_classic() +
+  geom_vline(aes(xintercept = mean(isNorm)),
+                 color='blue', linetype='dashed', size=1)
+
+ggplotly(p2)
+
+# cat('  Median: ', median(df2$isNorm), '\n')
+# cat('    Mean: ', mean(df2$isNorm), '\n')
+# cat('    Skew: ', skewness(df2$isNorm), '\n')
+# cat('Kurtosis: ', kurtosis(df2$isNorm), '\n')
+
+```
+
+
+The x-axis is a listing of values from 60 to 140 and the y-axis shows the percent of the total for each value. Thus, 100 is about 4% of the total number of values in the plot. It is obvious that most of the values are near the center with a decreasing number farther from the center, which creates a classic bell-shaped curve. A simple inspection leads to the conclusion that this is a normal distribution.
+
+It may be, though, that something more rigorous than looking at a curve is desired, so there are four measures that would help determine if this data set is normally distributed. The following table shows the four measures from the test data used to form the above plot along with what is expected of a normal distribution. In all cases, the test data are well within the expectation. While "skew" and "kurtosis" are not discussed in this post, the skew is a measure of the symmetry of the curve and kurtosis is a measure of the "peakedness" of the curve.
+
+```{r procTable, echo=FALSE, message=FALSE, warning=FALSE}
+
+normTest <- data.frame(
+	"Factor" = c(
+		"Mean"
+		,"Median"
+		,"Skew"
+		,"Kurtosis"
+	),
+	"Test Data" = c(
+		round(mean(df2$isNorm),2)
+		,round(median(df2$isNorm),2)
+		,round(skewness(df2$isNorm),2)
+		,round(kurtosis(df2$isNorm),2)
+	),
+	"Normal Distribution" = c(
+		"Mean = Median"
+		,"Mean = Median"
+		,"0.00"
+		,"3.00"
+	)
+)
+
+normTest %>%
+    kable("html",align = c("l","c","l")) %>%
+    kable_styling(bootstrap_options = c("striped", "condensed"), 
+                  full_width = FALSE, 
+                  position = "center")
+
+
+
+
+
+```
+
+
+Finally, there are several statistical tests that can be used to see if a data set is normally distributed; however, one of the most widely used is the *Shapiro-Wilk* test. That test returns a p-value and if that value is greater than 0.05 then it is assumed that the data are not significantly different from a normal distribution. 
+
+```{r normaltyTest, echo=FALSE, message=FALSE, warning=FALSE}
+
+shapiro.test(df2$isNorm)
+
+```
+
+
+In the case of the test data used for the curve above, the Shapiro-Wilk test returned a p-value of 0.0826, so it would be considered normally distributed.

@@ -7,17 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Tue, 11 Sep 2018 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Oct 2018 08:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://gself.com/tags/success/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Discipline Success</title>
+      <link>https://gself.com/2018/10/22/disc-success/</link>
+      <pubDate>Mon, 22 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/10/22/disc-success/</guid>
+      <description>This week I took a look at the “Course Benchmark Report” at the Arizona ASSIST site, where data about students who transfer from our college to any of the public universities is available. This report shows the success rate for our students.
+{&#34;x&#34;:{&#34;url&#34;:&#34;/post/disc-success/index_files/figure-html//widgets/widget_topTable.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}I suppose that the first fact that jumped out at me was the number of Computer Science and English students who transfer; no other discipline comes very close to those numbers.</description>
+    </item>
+    
+    <item>
       <title>Math Transfer</title>
-      <link>https://gself.com/2018/09/11/2018-09-11-math-transfer/</link>
+      <link>https://gself.com/2018/09/11/math-transfer/</link>
       <pubDate>Tue, 11 Sep 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/09/11/2018-09-11-math-transfer/</guid>
+      <guid>https://gself.com/2018/09/11/math-transfer/</guid>
       <description>The state of Arizona maintains a database, named ASSIST, that contains information about courses completed by students in public colleges/universities in Arizona. For example, if a student completed MAT 220, Calculus I, at Cochise College and another student completed MAT 243, Discrete Math Structures, at Arizona State University information about both of those classes would be stored in the ASSIST database. In addition, all of the classes completed by any Arizona student can be found so it is possible to “follow” Cochise College students to the University to see how well they are doing and, of course, how well we are doing in teaching those subjects.</description>
     </item>
     

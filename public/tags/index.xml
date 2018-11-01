@@ -22,6 +22,24 @@
     </item>
     
     <item>
+      <title>Art</title>
+      <link>https://gself.com/tags/art/</link>
+      <pubDate>Fri, 26 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Career</title>
+      <link>https://gself.com/tags/career/</link>
+      <pubDate>Tue, 30 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Correlation</title>
       <link>https://gself.com/tags/correlation/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
@@ -33,7 +51,7 @@
     <item>
       <title>Correlogram</title>
       <link>https://gself.com/tags/correlogram/</link>
-      <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
+      <pubDate>Tue, 16 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/correlogram/</guid>
       <description></description>
@@ -42,7 +60,7 @@
     <item>
       <title>Courses</title>
       <link>https://gself.com/tags/courses/</link>
-      <pubDate>Fri, 14 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Fri, 05 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/courses/</guid>
       <description></description>
@@ -58,11 +76,47 @@
     </item>
     
     <item>
+      <title>Data</title>
+      <link>https://gself.com/tags/data/</link>
+      <pubDate>Fri, 12 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discipline</title>
+      <link>https://gself.com/tags/discipline/</link>
+      <pubDate>Mon, 22 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/discipline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distribution</title>
+      <link>https://gself.com/tags/distribution/</link>
+      <pubDate>Tue, 09 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Employment</title>
       <link>https://gself.com/tags/employment/</link>
-      <pubDate>Tue, 25 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Tue, 30 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/employment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploration</title>
+      <link>https://gself.com/tags/exploration/</link>
+      <pubDate>Tue, 30 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/exploration/</guid>
       <description></description>
     </item>
     
@@ -72,6 +126,15 @@
       <pubDate>Fri, 21 Sep 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/gap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ggplot</title>
+      <link>https://gself.com/tags/ggplot/</link>
+      <pubDate>Fri, 26 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/ggplot/</guid>
       <description></description>
     </item>
     
@@ -94,9 +157,18 @@
     </item>
     
     <item>
+      <title>Kurtosis</title>
+      <link>https://gself.com/tags/kurtosis/</link>
+      <pubDate>Fri, 12 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/kurtosis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Math</title>
       <link>https://gself.com/tags/math/</link>
-      <pubDate>Tue, 11 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Fri, 26 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/math/</guid>
       <description></description>
@@ -121,27 +193,54 @@
     </item>
     
     <item>
+      <title>Plotly</title>
+      <link>https://gself.com/tags/plotly/</link>
+      <pubDate>Tue, 16 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/plotly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Registration</title>
       <link>https://gself.com/tags/registration/</link>
-      <pubDate>Fri, 07 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Fri, 05 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/registration/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Regression</title>
+      <link>https://gself.com/tags/regression/</link>
+      <pubDate>Tue, 16 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Resume</title>
       <link>https://gself.com/tags/resume/</link>
-      <pubDate>Fri, 21 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Tue, 30 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/resume/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Skew</title>
+      <link>https://gself.com/tags/skew/</link>
+      <pubDate>Fri, 12 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/skew/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Skills</title>
       <link>https://gself.com/tags/skills/</link>
-      <pubDate>Fri, 21 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Fri, 19 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/skills/</guid>
       <description></description>
@@ -159,7 +258,7 @@
     <item>
       <title>Success</title>
       <link>https://gself.com/tags/success/</link>
-      <pubDate>Tue, 11 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Mon, 22 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/success/</guid>
       <description></description>
@@ -186,9 +285,18 @@
     <item>
       <title>University</title>
       <link>https://gself.com/tags/university/</link>
-      <pubDate>Tue, 18 Sep 2018 08:00:00 -0700</pubDate>
+      <pubDate>Mon, 22 Oct 2018 08:00:00 -0700</pubDate>
       
       <guid>https://gself.com/tags/university/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workforce</title>
+      <link>https://gself.com/tags/workforce/</link>
+      <pubDate>Fri, 28 Sep 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/tags/workforce/</guid>
       <description></description>
     </item>
     

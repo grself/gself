@@ -7,17 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Tue, 18 Sep 2018 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Oct 2018 08:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://gself.com/tags/university/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Discipline Success</title>
+      <link>https://gself.com/2018/10/22/disc-success/</link>
+      <pubDate>Mon, 22 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/10/22/disc-success/</guid>
+      <description>This week I took a look at the “Course Benchmark Report” at the Arizona ASSIST site, where data about students who transfer from our college to any of the public universities is available. This report shows the success rate for our students.
+{&#34;x&#34;:{&#34;url&#34;:&#34;/post/disc-success/index_files/figure-html//widgets/widget_topTable.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}I suppose that the first fact that jumped out at me was the number of Computer Science and English students who transfer; no other discipline comes very close to those numbers.</description>
+    </item>
+    
+    <item>
       <title>University Transfer Student Characteristics</title>
-      <link>https://gself.com/2018/09/18/2018-09-18-univ-trans-char/</link>
+      <link>https://gself.com/2018/09/18/univ-trans-char/</link>
       <pubDate>Tue, 18 Sep 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/09/18/2018-09-18-univ-trans-char/</guid>
+      <guid>https://gself.com/2018/09/18/univ-trans-char/</guid>
       <description>The state of Arizona maintains a database that tracks students who transfer from one of our community colleges to one of our publicly-funded universities. That database includes a huge amount of information about transfer students and from time-to-time, I’ll share something from that database in my blog. For today, the following table lists some general characteristics about our transfer students over the past five years.
 Characteristics12-1313-1414-1515-1616-1717-18ChangeTotal102671050710696108211085310257-0.</description>
     </item>

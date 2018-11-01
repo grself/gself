@@ -1,0 +1,23 @@
+---
+title: "Cochise County Economic Overview"
+author: "George Self"
+date: 2018-09-28T08:00:00-07:00
+description: "-- An economic overview report for Cochise County --"
+categories: ["economy"]
+tags: ["workforce","employment"]
+---
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(tidyverse)
+library(here)
+library(ggplot2)
+library(plotly)
+
+# Set the rproj home directory
+here::here()
+```
+
+I produced an EMSI Economic Overview of Cochise County and attached the results below. This is a thorough 25-page report and includes information on Cochise County's population, cost of living, employment, Gross Regional Product, and many other interesting bits of economic information. You will enjoy reading this and can use it as a reference for projects that you may be working on.
+
+[Cochise County Economic Overview](/files/economy.pdf)

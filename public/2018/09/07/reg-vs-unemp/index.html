@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration vs. Unemployment &middot; George Self</title>
+        <meta name="description" content="-- Do community college regitrations change with unemployment rates? --">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.50" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Registration vs. Unemployment">
+<meta property="og:description" content="-- Do community college regitrations change with unemployment rates? --">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://gself.com/2018/09/07/reg-vs-unemp/">
+        <link rel="stylesheet" href="https://gself.com/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <link rel = "stylesheet"
+   type = "text/css"
+   href = "/styles/icochise.css" />
+
+        
+    </head>
+    <body>
+        
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'XXX', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="gself" href="https://gself.com/">gself</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://gself.com/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/XXX">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/XXX">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/XXX/YYY">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:grself@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tutorials" href="/tutorials/">Tutorials</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/page/about/">About</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Registration vs. Unemployment</h1>
+    
+        <p class="post-description" itemprop="description">-- Do community college regitrations change with unemployment rates? --</p>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2018-09-07" itemprop="datePublished">Fri, Sep 7, 2018</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://google.com/&#43;XXX" itemprop="url" rel="author">George Self</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/plotly-binding/plotly.js"></script>
+<script src="/rmarkdown-libs/typedarray/typedarray.min.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+<link href="/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/plotly-main/plotly-latest.min.js"></script>
+
+
+<p>There is a common belief among community college administrators that as unemployment rates increase the number of registrations for classes at the community college also increase. The idea is that students who are unemployed look to a community college for new training opportunities that may lead to future employment.</p>
+<p>I wanted to look at that concept and created the following visualization to explore the idea. I calculated the Cochise College fall registrations for the years 2009-2016 and then found the unemployment rates for three geographical areas using the US Census Bureau’s data. For the Douglas Campus I matched the unemployment data for the City of Douglas, for the Sierra Vista Campus I matched the unemployment data for the City of Sierra Vista, and for the online campus, since it covers all of Cochise County, I matched the unemployment data for Cochise County.</p>
+<p>Here is a brief animation that shows the results over the past seven years. You can click the Play button to view the entire animation or slide the play head to a year of interest. You can also hover your mouse over any of the data points and read the unemployment rate and registration values for that point.</p>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"271475f94f74":["function () ","plotlyVisDat"]},"cur_data":"271475f94f74","attrs":{"271475f94f74":{"x":{},"y":{},"showlegend":true,"marker":{"size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"color":{},"frame":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Unemployment Rate","titlefont":{"family":"Courier New, monospace","size":18,"color":"#666"},"range":[5.79,12.61]},"yaxis":{"domain":[0,1],"automargin":true,"title":"All Registrations","titlefont":{"family":"Courier New, monospace","size":18,"color":"#666"},"range":[1833.6,5252.4]},"hovermode":"closest","showlegend":true,"sliders":[{"currentvalue":{"prefix":"Year: ","xanchor":"right","font":{"size":16,"color":"rgba(204,204,204,1)"}},"steps":[{"method":"animate","args":[["2009"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2009","value":"2009"},{"method":"animate","args":[["2010"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2010","value":"2010"},{"method":"animate","args":[["2011"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2011","value":"2011"},{"method":"animate","args":[["2012"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2012","value":"2012"},{"method":"animate","args":[["2013"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2013","value":"2013"},{"method":"animate","args":[["2014"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2014","value":"2014"},{"method":"animate","args":[["2015"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2015","value":"2015"},{"method":"animate","args":[["2016"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2016","value":"2016"}],"visible":true,"pad":{"t":40}}],"updatemenus":[{"type":"buttons","direction":"right","showactive":false,"y":0,"x":0,"yanchor":"top","xanchor":"right","pad":{"t":60,"r":5},"buttons":[{"label":"Play","method":"animate","args":[null,{"fromcurrent":true,"mode":"immediate","transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false}}]}]}]},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[8.2],"y":[2797],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.4],"y":[1989],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[6.5],"y":[5017],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"frames":[{"name":"2009","data":[{"x":[8.2],"y":[2797],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.4],"y":[1989],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[6.5],"y":[5017],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2010","data":[{"x":[9.1],"y":[3232],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2010","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.7],"y":[2593],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2010","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[6.1],"y":[5097],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2010","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2011","data":[{"x":[12.1],"y":[2915],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2011","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.6],"y":[2428],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2011","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.4],"y":[4622],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2011","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2012","data":[{"x":[12.3],"y":[2661],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2012","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[9.2],"y":[2121],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2012","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.5],"y":[4254],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2012","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2013","data":[{"x":[10.7],"y":[2791],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2013","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[9.4],"y":[2117],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2013","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8],"y":[4195],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2013","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2014","data":[{"x":[12.2],"y":[2705],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2014","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[9.3],"y":[2200],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2014","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.2],"y":[3947],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2014","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2015","data":[{"x":[11.3],"y":[2619],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2015","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.7],"y":[2319],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2015","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.2],"y":[3967],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2015","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2016","data":[{"x":[10.9],"y":[2434],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2016","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.6],"y":[2409],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2016","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.1],"y":[3222],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2016","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]}],"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+<p>This visualization does not seem to support the idea that as unemployment increases the number of class registrations also increases. In fact, the Douglas values show a sharp increase in unemployment between 2010 and 2011, but the number of registrations does not seem to increase. Sierra Vista’s unemployment rate seems to increase slightly over this time period but the number of registrations steadily decreases.</p>
+<p>That made me wonder if the change in registrations would be seen not in total college registrations but only in Career/Technical Education classes since they would be viewed as more directly leading to employment as opposed to transfer-type classes. So, I re-ran the simulation using only CTE classes.</p>
+<div id="htmlwidget-2" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"visdat":{"271420e77e9f":["function () ","plotlyVisDat"]},"cur_data":"271420e77e9f","attrs":{"271420e77e9f":{"x":{},"y":{},"showlegend":true,"marker":{"size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"color":{},"frame":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Unemployment Rate","titlefont":{"family":"Courier New, monospace","size":18,"color":"#666"},"range":[5.79,12.61]},"yaxis":{"domain":[0,1],"automargin":true,"title":"CTE Registrations","titlefont":{"family":"Courier New, monospace","size":18,"color":"#666"},"range":[294.15,1962.85]},"hovermode":"closest","showlegend":true,"sliders":[{"currentvalue":{"prefix":"Year: ","xanchor":"right","font":{"size":16,"color":"rgba(204,204,204,1)"}},"steps":[{"method":"animate","args":[["2009"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2009","value":"2009"},{"method":"animate","args":[["2010"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2010","value":"2010"},{"method":"animate","args":[["2011"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2011","value":"2011"},{"method":"animate","args":[["2012"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2012","value":"2012"},{"method":"animate","args":[["2013"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2013","value":"2013"},{"method":"animate","args":[["2014"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2014","value":"2014"},{"method":"animate","args":[["2015"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2015","value":"2015"},{"method":"animate","args":[["2016"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2016","value":"2016"}],"visible":true,"pad":{"t":40}}],"updatemenus":[{"type":"buttons","direction":"right","showactive":false,"y":0,"x":0,"yanchor":"top","xanchor":"right","pad":{"t":60,"r":5},"buttons":[{"label":"Play","method":"animate","args":[null,{"fromcurrent":true,"mode":"immediate","transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false}}]}]}]},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[8.2],"y":[450],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.4],"y":[638],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[6.5],"y":[1885],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"frames":[{"name":"2009","data":[{"x":[8.2],"y":[450],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.4],"y":[638],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[6.5],"y":[1885],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2009","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2010","data":[{"x":[9.1],"y":[587],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2010","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.7],"y":[855],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2010","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[6.1],"y":[1887],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2010","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2011","data":[{"x":[12.1],"y":[459],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2011","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.6],"y":[818],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2011","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.4],"y":[1734],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2011","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2012","data":[{"x":[12.3],"y":[471],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2012","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[9.2],"y":[656],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2012","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[7.5],"y":[1358],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2012","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2013","data":[{"x":[10.7],"y":[370],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2013","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[9.4],"y":[739],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2013","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8],"y":[1522],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2013","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2014","data":[{"x":[12.2],"y":[416],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2014","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[9.3],"y":[776],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2014","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.2],"y":[1579],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2014","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2015","data":[{"x":[11.3],"y":[396],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2015","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.7],"y":[775],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2015","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.2],"y":[1640],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2015","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]},{"name":"2016","data":[{"x":[10.9],"y":[381],"showlegend":true,"marker":{"color":"rgba(102,194,165,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2016","type":"scatter","mode":"markers","name":"Douglas Campus","textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.6],"y":[786],"showlegend":true,"marker":{"color":"rgba(252,141,98,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2016","type":"scatter","mode":"markers","name":"Online Campus","textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","visible":true},{"x":[8.1],"y":[875],"showlegend":true,"marker":{"color":"rgba(141,160,203,1)","size":10,"line":{"color":"rgba(50,50,50,.8)","width":2}},"frame":"2016","type":"scatter","mode":"markers","name":"Sierra Vista Campus","textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0,1,2]}],"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+<p>Again, there is no overwhelming indication of any sort of relationship between the unemployment rate and the number of registrations for CTE classes. Using the Douglas Campus as a single data point, from 2009 to 2010 there was a significant increase in unemployment and a corresponding increase in the number of registrations. However, the unemployment rate increased dramatically in 2011 and the number of CTE registrations declined back to the 2009 level. For the remainder of the analyzed years, the Douglas CTE registrations never increased much beyond the 2009 level despite a significant increase in unemployment.</p>
+<p>While there could be any number of intervening factors not accounted for in this simple analysis, it would seem, at least on the surface, that there is no clear relationship between the unemployment rate in our area and the number of students registering for classes at Cochise College.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/cte/">cte</a>, 
+            
+                <a href="/tags/employment/">employment</a>, 
+            
+                <a href="/tags/registration/">registration</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Registration%20vs.%20Unemployment&url=https%3a%2f%2fgself.com%2f2018%2f09%2f07%2freg-vs-unemp%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fgself.com%2f2018%2f09%2f07%2freg-vs-unemp%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fgself.com%2f2018%2f09%2f07%2freg-vs-unemp%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="gself" href="https://gself.com/">gself</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://gself.com/js/jquery-1.11.3.min.js"></script>
+        <script src="https://gself.com/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://gself.com//js/highlight.pack.js"></script>
+        
+        
+        <script src="https://gself.com/js/scripts.js"></script>
+    </body>
+</html>
+

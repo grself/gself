@@ -1,0 +1,75 @@
+---
+title: "Art With R"
+author: "George Self"
+date: 2018-10-26T08:00:00-07:00
+description: "-- It Is Nice To Sometimes Just Create Pretty Plots --"
+categories: ["r"]
+tags: ["ggplot","math","art"]
+---
+
+
+
+<p>I recently found an interesting tutorial on how to use <em>ggplot2</em> in R to create pretty graphs. The key is to define a mathematical function that plots points in some sort of pattern and then use various <em>ggplot2</em> features to make that plot look nice. Find the <a href="https://www.datacamp.com/projects/62">tutorial at this link</a>.</p>
+<p>The tutorial used the concept of phyllotaxis to create interesting scatter plots. Phyllotaxis is the spiral arrangement of the leaves on a stem and that arrangement can be simulated with a bit of mathematics. Here are two plots I made using the phyllotaxis concept.</p>
+<pre class="r"><code># Load ggplot2
+library(ggplot2)
+
+# Define the number of points
+points &lt;- 1000
+
+# Defining the angle between each point
+# The &#39;Golden Angle&#39; is found in nature, about 2.4
+#angle &lt;- pi*(3 - sqrt(5)) # About 2.4
+angle &lt;- 3.5 # Tried various angles other than the Golden Angle
+
+# Transparancy for the points (0-1.0)
+ptAlpha &lt;- 0.25
+
+# Shape of the points (see http://www.cookbook-r.com/Graphs/Shapes_and_line_types/)
+ptShape &lt;- 19
+
+# Set the background color
+bgColor &lt;- &#39;lightyellow&#39;
+
+# Create a df with the points to plot
+t &lt;- (1:points) * angle
+x &lt;- sin(t)
+y &lt;-cos(t)
+df &lt;- data.frame(t, x, y)
+
+ggplot(df, aes(x*t, y*t)) +
+  geom_point(aes(color = t), size = 10.0, alpha = ptAlpha, shape = ptShape) +
+  scale_color_gradient(low = &#39;orangered1&#39;, high = &#39;gold2&#39;) +
+  theme(panel.background = element_rect(fill = bgColor),
+        panel.grid = element_blank(),
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = &quot;none&quot;)</code></pre>
+<p><img src="/post/art-with-r/index_files/figure-html/image01-1.png" width="480" /></p>
+<pre class="r"><code># These lines are explained in the first image
+
+library(ggplot2)
+points &lt;- 500
+angle &lt;- 7.0
+ptColor &lt;- &#39;darkgreen&#39;
+ptAlpha &lt;- 0.5
+ptShape &lt;- 8
+bgColor &lt;- &#39;#eeffee&#39;
+
+t &lt;- (1:points) * angle
+x &lt;- sin(t)
+y &lt;-cos(t)
+df &lt;- data.frame(t, x, y)
+
+ggplot(df, aes(x*t, y*t)) +
+  geom_point(aes(size = t, color = t), alpha = ptAlpha, shape = ptShape) +
+  scale_color_gradient(low = &#39;blue4&#39;, high = &#39;green4&#39;) +
+  theme(panel.background = element_rect(fill = bgColor),
+        panel.grid = element_blank(),
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = &quot;none&quot;)</code></pre>
+<p><img src="/post/art-with-r/index_files/figure-html/image02-1.png" width="480" /></p>
+<p>The mathematics for these images was fairly simple and it took me longer to figure out all of the <em>ggplot2</em> settings needed to make the plots look nice without all of the analysis trappings (like gridlines). I had a couple of hours of fun creating this post — now, back to work…</p>

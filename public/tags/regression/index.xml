@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regression on gself</title>
+    <link>https://gself.com/tags/regression/</link>
+    <description>Recent content in Regression on gself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>George Self</copyright>
+    <lastBuildDate>Tue, 16 Oct 2018 08:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://gself.com/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simple Regression</title>
+      <link>https://gself.com/2018/10/16/simple-regres/</link>
+      <pubDate>Tue, 16 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/10/16/simple-regres/</guid>
+      <description>Simple RegressionFor this blog post, the Cochise College IPEDs Peer data frame will be used. That data frame was first seen in Introduction to IPEDS Peers (August 24, 2018). That data frame includes 113 attributes for 29 colleges and it is natural to wonder if any of those attributes are related to each other in such a way that they can be used for predictions.</description>
+    </item>
+    
+  </channel>
+</rss>

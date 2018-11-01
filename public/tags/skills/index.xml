@@ -7,17 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Fri, 21 Sep 2018 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 19 Oct 2018 08:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://gself.com/tags/skills/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Medical Billing</title>
+      <link>https://gself.com/2018/10/19/med-billing/</link>
+      <pubDate>Fri, 19 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/10/19/med-billing/</guid>
+      <description>In a chance conversation I had with our Dean of Allied Health the other day, she mentioned that she was considering adding a short certificate program in medical billing but she was not sure if there was much of a job market for that skill here. I decided to access the EMSI data base and conduct a “new program” analysis to see what the job market looked like. Not too surprising, there were no job listings for medical billing specialists in Cochise County over the past several years.</description>
+    </item>
+    
+    <item>
       <title>Skills Gap Analysis</title>
-      <link>https://gself.com/2018/09/21/2018-09-21-skills-gap-analysis/</link>
+      <link>https://gself.com/2018/09/21/skills-gap/</link>
       <pubDate>Fri, 21 Sep 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/09/21/2018-09-21-skills-gap-analysis/</guid>
+      <guid>https://gself.com/2018/09/21/skills-gap/</guid>
       <description>I was privileged to attend the annual EMSI conference in Coeur D’Alene, ID, from September 10 to 12. EMSI is a company that provides labor market data that we use to analyze our programs. They gather data from a number of government sources, like the Census Bureau, and from job postings and resumes found in many different online locations. At the conference, I was able to attend sessions hosted by my colleagues in higher education and also sessions focused on other industries.</description>
     </item>
     

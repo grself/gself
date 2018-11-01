@@ -7,17 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>George Self</copyright>
-    <lastBuildDate>Fri, 31 Aug 2018 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 16 Oct 2018 08:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://gself.com/tags/correlogram/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Simple Regression</title>
+      <link>https://gself.com/2018/10/16/simple-regres/</link>
+      <pubDate>Tue, 16 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/10/16/simple-regres/</guid>
+      <description>Simple RegressionFor this blog post, the Cochise College IPEDs Peer data frame will be used. That data frame was first seen in Introduction to IPEDS Peers (August 24, 2018). That data frame includes 113 attributes for 29 colleges and it is natural to wonder if any of those attributes are related to each other in such a way that they can be used for predictions.</description>
+    </item>
+    
+    <item>
       <title>About Correlation</title>
-      <link>https://gself.com/2018/08/31/2018-08-31-about-correlation/</link>
+      <link>https://gself.com/2018/08/31/about-corr/</link>
       <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
       
-      <guid>https://gself.com/2018/08/31/2018-08-31-about-correlation/</guid>
+      <guid>https://gself.com/2018/08/31/about-corr/</guid>
       <description>One of the main preoccupations for data researchers is to attempt to find some sort of correlation, or relationship, between two or more attributes of a data frame. The calculated correlation is a number between -1.0 and +1.0 where correlations close to 0.0 are very weak while correlations near the extremes are strong. The type of correlation that can be calculated is dependent on the type of data being compared since the process for categorical data is fundamentally different than that for continuous data.</description>
     </item>
     

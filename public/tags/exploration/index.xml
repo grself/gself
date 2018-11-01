@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exploration on gself</title>
+    <link>https://gself.com/tags/exploration/</link>
+    <description>Recent content in Exploration on gself</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>George Self</copyright>
+    <lastBuildDate>Tue, 30 Oct 2018 08:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://gself.com/tags/exploration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Career Coach</title>
+      <link>https://gself.com/2018/10/30/career-coach/</link>
+      <pubDate>Tue, 30 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/10/30/career-coach/</guid>
+      <description>IntroductionDuring the summer of 2018, Cochise College quietly launched our new Career Coach site. This is linked on the college’s homepage and is available to anyone who wants to explore careers and the training that Cochise College offers for career changes. Following is the Career Coach start page.
+Folks can jump in and start searching for careers or for programs offered at Cochise College, but it is recommended that they begin by taking an assessment to determine what sort of career may be a good match for their skills and interests.</description>
+    </item>
+    
+    <item>
+      <title>Data Exploration</title>
+      <link>https://gself.com/2018/10/12/data-explor/</link>
+      <pubDate>Fri, 12 Oct 2018 08:00:00 -0700</pubDate>
+      
+      <guid>https://gself.com/2018/10/12/data-explor/</guid>
+      <description>One of the first things I must do when I am faced with a new data set is to look the data over and get a general feel for what is contained in the data set. R provides a number of great tools for exploring data before I ever start worrying about the results of a specific survey or answering a research question.</description>
+    </item>
+    
+  </channel>
+</rss>

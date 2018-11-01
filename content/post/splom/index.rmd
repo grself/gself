@@ -1,0 +1,219 @@
+---
+title: "The Scatterplot Matrix (SPLOM)"
+author: "George Self"
+date: 2018-11-02T08:00:00-07:00
+description: "-- A SPLOM Visualizes Several Scatterplots At Once --"
+categories: ["r"]
+tags: ["scatterplot","matrix"]
+---
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(tidyverse)
+library(here)
+library(DT)
+library(widgetframe)
+library(psych)
+
+# Set the rproj home directory
+here::here()
+```
+
+```{r prepDF, include=FALSE}
+
+df <- read_csv("peers.csv") %>%
+  select(
+    id = "unitid"
+    ,name = "institution name"
+    ,year = "year"
+    ,fips = "HD2016.FIPS state code"
+    ,sect = "HD2016.Sector of institution"
+    ,deg = "HD2016.Degree-granting status"
+    ,tuition = "DRVIC2016.Tuition and fees, 2016-17"
+    ,priInOn = "DRVIC2016.Total price for in-state students living on campus 2016-17"
+    ,priOutOn = "DRVIC2016.Total price for out-of-state students living on campus 2016-17"
+    ,priInOff = "DRVIC2016.Total price for in-state students living off campus (not with family)  2016-17"
+    ,priInOffFam = "DRVIC2016.Total price for in-state students living off campus (with family)  2016-17"
+    ,size = "HD2016.Institution size category"
+    ,regn = "HD2016.Bureau of Economic Analysis (BEA) regions"
+    ,enrlTtl = "DRVEF2016.Total  enrollment"
+    ,enrlFT = "DRVEF2016.Full-time enrollment"
+    ,enrlPT = "DRVEF2016.Part-time enrollment"
+    ,fteFall = "DRVEF2016.Full-time equivalent fall enrollment"
+    ,frstEnrl = "DRVEF2016.First-time degree/certificate-seeking undergraduate enrollment"
+    ,tranEnrl = "DRVEF2016.Transfer-in degree/certificate-seeking undergraduate enrollment"
+    ,contEnrl = "DRVEF2016.Continuing degree/certificate-seeking undergraduate enrollment"
+    ,nodegEnrl = "DRVEF2016.Nondegree/certificate-seeking undergraduate enrollment"
+    ,enrlInd = "DRVEF2016.Percent of total enrollment that are American Indian or Alaska Native"
+    ,enrlAsn = "DRVEF2016.Percent of total enrollment that are Asian"
+    ,enrlBlk = "DRVEF2016.Percent of total enrollment that are Black or African American"
+    ,enrlHsp = "DRVEF2016.Percent of total enrollment that are Hispanic/Latino"
+    ,enrlHaw = "DRVEF2016.Percent of total enrollment that are Native Hawaiian or Other Pacific Islander"
+    ,enrlWhi = "DRVEF2016.Percent of total enrollment that are White"
+    ,enrlTwo = "DRVEF2016.Percent of total enrollment that are two or more races"
+    ,enrlUnk = "DRVEF2016.Percent of total enrollment that are Race/ethnicity unknown"
+    ,enrlAli = "DRVEF2016.Percent of total enrollment that are Nonresident Alien"
+    ,enrlPac = "DRVEF2016.Percent of total enrollment that are Asian/Native Hawaiian/Pacific Islander"
+    ,enrlFem = "DRVEF2016.Percent of total enrollment that are women"
+    ,sfr = "EF2016D.Student-to-faculty ratio"
+    ,retFT = "EF2016D.Full-time retention rate, 2016"
+    ,retPT = "EF2016D.Part-time retention rate, 2016"
+    ,enrlAdlt = "DRVEF2016.Adult age (25-64) enrollment, all students"
+    ,enrl18 = "DRVEF2016.Percent of undergraduate enrollment under 18"
+    ,enrl1824 = "DRVEF2016.Percent of undergraduate enrollment 18-24"
+    ,enrl2564 = "DRVEF2016.Percent of undergraduate enrollment, 25-64"
+    ,enrl65 = "DRVEF2016.Percent of undergraduate enrollment over 65"
+    ,frstInNum = "DRVEF2016.Number of first-time undergraduates - in-state"
+    ,frstInPct = "DRVEF2016.Percent of first-time undergraduates - in-state"
+    ,frstOutNum = "DRVEF2016.Number of first-time undergraduates - out-of-state"
+    ,frstOutPct = "DRVEF2016.Percent of first-time undergraduates - out-of-state"
+    ,deOnly = "DRVEF2016.Percent of students enrolled exclusively in distance education courses"
+    ,deSome = "DRVEF2016.Percent of students enrolled in some but not all distance education courses"
+    ,dePct = "DRVEF2016.Percent of students not enrolled in any distance education courses"
+    ,asoc = "DRVC2016.Associate's degree"
+    ,cert1 = "DRVC2016.Certificates of less than 1-year"
+    ,cert12 = "DRVC2016.Certificates of 1 but less than 2-years"
+    ,asocNum = "DRVC2016.Number of students receiving an Associate's degree"
+    ,cert1Num = "DRVC2016.Number of students receiving a certificate of less than 1-year"
+    ,cert12Num = "DRVC2016.Number of students receiving a certificate of 1 but less than 4-years"
+    ,gradTtl = "DRVGR2016.Graduation rate, total cohort"
+    ,gradMal = "DRVGR2016.Graduation rate, men"
+    ,gradFem = "DRVGR2016.Graduation rate, women"
+    ,tranTtl = "DRVGR2016.Transfer-out rate, total cohort"
+    ,gradPell = "DRVGR2016.Pell Grant recipients - Overall graduation rate within 150 percent of normal time"
+    ,gradNoFa = "DRVGR2016.Did not receive Pell Grants or Subsidized Stafford Loans - Overall graduation rate within 150 percent of normal time"
+    ,grad100 = "GR200_16.Graduation rate - degree/certificate within 100% of normal time"
+    ,faPct = "SFA1516.Percent of full-time first-time undergraduates awarded any financial aid"
+    ,faFedPct = "SFA1516.Percent of full-time first-time undergraduates awarded federal, state, local or institutional grant aid"
+    ,faFedAmt = "SFA1516.Average amount of federal, state, local or institutional grant aid awarded"
+    ,pellPct = "SFA1516.Percent of full-time first-time undergraduates awarded Pell grants"
+    ,pellAmt = "SFA1516.Average amount of Pell grant aid awarded to full-time first-time undergraduates"
+    ,loanPct = "SFA1516.Percent of full-time first-time undergraduates awarded student loans"
+    ,loanAmt = "SFA1516.Average amount of student loans awarded to full-time first-time undergraduates"
+    ,revnu = "DRVF2016.Core revenues, total dollars (GASB)"
+    ,revnuTuiPct = "DRVF2016.Tuition and fees as a percent of core revenues (GASB)"
+    ,revnuStPct = "DRVF2016.State appropriations as percent of core revenues  (GASB)"
+    ,revnuLocPct = "DRVF2016.Local appropriations as a percent of core revenues (GASB)"
+    ,revnuTuiFte = "DRVF2016.Revenues from tuition and fees per FTE (GASB)"
+    ,revnuStFte = "DRVF2016.Revenues from state appropriations per FTE (GASB)"
+    ,revnuLocFte = "DRVF2016.Revenues from local appropriations per FTE (GASB)"
+    ,exp = "DRVF2016.Core expenses, total dollars (GASB)"
+    ,expInstrPct = "DRVF2016.Instruction expenses as a percent of total core expenses (GASB)"
+    ,expAcSpPct = "DRVF2016.Academic support expenses as a percent of total core expenses (GASB)"
+    ,expStSvPct = "DRVF2016.Student service expenses as a percent of total core expenses (GASB)"
+    ,expInSpPct = "DRVF2016.Institutional support expenses as a percent of total core expenses (GASB)"
+    ,expInstrFte = "DRVF2016.Instruction expenses per FTE  (GASB)"
+    ,expAcSpFte = "DRVF2016.Academic support expenses per FTE (GASB)"
+    ,expStSvFte = "DRVF2016.Student service expenses per FTE (GASB)"
+    ,expInSpFte = "DRVF2016.Institutional support expenses per FTE (GASB)"
+    ,expSalPct = "DRVF2016.Salaries and wages for core expenses as a percent of total core expenses (GASB)"
+    ,expSalInstr = "DRVF2016.Salaries and wages for instruction as a percent of total expenses for instruction (GASB)"
+    ,expSalAcSp = "DRVF2016.Salaries and wages for academic support as a percent of total expenses for academic support (GASB)"
+    ,expSalStSv = "DRVF2016.Salaries and wages for student services as a percent of total expenses for student services (GASB)"
+    ,expSalInSp = "DRVF2016.Salaries and wages for institutional support as a percent of total expenses for institutional support (GASB)"
+    ,expSalAvr = "DRVHR2016.Average salary equated to 9 months of full-time instructional staff - all ranks"
+    ,fteStf = "DRVHR2016.Total FTE staff"
+    ,fteInstr = "DRVHR2016.Instructional FTE"
+    ,fteLib = "DRVHR2016.Librarians, Curators, and Archivists/Student and Academic Affairs and Other Education Services FTE"
+    ,fteStSv = "DRVHR2016.Student and Academic Affairs and Other Education Services FTE"
+    ,fteMgmt = "DRVHR2016.Management FTE"
+    ,fteBus = "DRVHR2016.Business and Financial Operations FTE"
+    ,fteCmptr = "DRVHR2016.Computer, Engineering, and Science FTE"
+    ,fteAdmSp = "DRVHR2016.Service, sales, office/admin support, natural resources, construction, maintenance, production, transportation & materials moving FTE"
+    ,priFa = "SFA1516.Average net price-students awarded grant or scholarship aid, 2015-16"
+    ,phyBks = "DRVAL2016.Physical books as a percent of the total library collection"
+    ,phyMed = "DRVAL2016.Physical media as a percent of the total library collection"
+    ,phySer = "DRVAL2016.Physical serials as a percent of the total library collection"
+    ,dbLib = "DRVAL2016.Databases as a percent of the total library collection"
+    ,libSal = "DRVAL2016.Salaries and wages from the library budget as a percent of total library expenditures"
+    ,libBkPrch = "DRVAL2016.One-time purchases of books, serial backfiles, and other materials as a percent of total library expenditures"
+    ,expLibFte = "DRVAL2016.Total library expenditures per FTE"
+    ,addr = "HD2016.Street address or post office box"
+    ,city = "HD2016.City location of institution"
+    ,state = "HD2016.State abbreviation"
+    ,zip = "HD2016.ZIP code"
+    ,url = "HD2016.Institution's internet website address"
+    ,county = "HD2016.County name"
+    ,long = "HD2016.Longitude location of institution"
+    ,lat = "HD2016.Latitude location of institution"
+  )
+
+salary <- df %>%
+  select(
+     'Core' = expSalPct
+    ,'Inst' = expSalInstr
+    ,'AcadSup' = expSalAcSp
+    ,'StuSvc' = expSalStSv
+    ,'InstSup' = expSalInSp
+  )
+
+
+```
+
+
+## Introduction
+
+While working with a data frame that contains a number of variables it is helpful to look at combinations of those variables to determine if any relationships are evident. One way to do that is to create a correlogram (see the post for [August 31](about-correlation), but another interesting method is to create a *Scatterplot Matrix* (sometimes called a *SPLOM*) and this post illustrates that feature.
+
+## Procedure
+
+For this exploration I chose to use the IPEDS data frame for several reasons. First, I'm familiar with that data frame and, second, it has a lot of data that can be analyzed as a good example. To make a nice splom that would be easy to read. I wanted four or five variables that would reasonably be related that I could pair so I chose the various categories of salary as a percent of core expenses. Following are the five variables that I compared.
+
+* Core: Salaries and wages for core expenses as a percent of total core expenses
+* Inst: Salaries and wages for instruction as a percent of total expenses for instruction
+* AcadSup: Salaries and wages for academic support as a percent of total expenses for academic support
+* StuSvc: Salaries and wages for student services as a percent of total expenses for student services
+* InstSup: Salaries and wages for institutional support as a percent of total expenses for institutional support
+
+It may be helpful to look at the raw data for these five variables.
+
+```{r dataTable, echo=FALSE, message=FALSE, warning=FALSE}
+
+f1 <- datatable(salary, options = list(pageLength = 7, scrollX = 'true'))
+frameWidget(f1)
+
+```
+
+
+Here is the splom for these five variables.
+
+```{r splom, echo=FALSE, results='asis'}
+
+# This is a simple splom
+#pairs(salary)
+
+# This is from the psych package and includes a lot of additional information.
+pairs.panels(salary)
+
+```
+
+A bit of an explanation is in order. 
+
+### Diagonal Boxes
+
+The variables tested are listed along the diagonal, along with the following information about each variable.
+
+* **Histogram**. This is plot looks like rectangles that graphically indicate the number of values that fall into each bin. As an example, histogram for the *InstSup* ("Institutional Support") box is divided into five bins that indicate the various percentages colleges allocate for Institutional Support salaries. The tallest rectangle, between 30 and 40 percent, shows that most colleges in the sample allocate between 30 and 40 percent of their Institutional Support expenses to salaries. Note, the y-axis scale is intended to be used for the scatter plots and is not meaningful for the histogram.
+* **Density Plot**. The black line is the density, or data distribution, smoothed out over the entire range of the variable. This is useful for visualizing the distribution where the histogram may be too course. The density plot for the "Core" variable shows an almost perfect normal distribution which is not evident from the histogram.
+* **Rug Plot**. These are the tiny tick marks along the bottom of the histogram and show where the 29 colleges lie along the histogram. Using the *InstSup* values, the rug plot makes it clear that while most of the colleges are in the 30-40 percent range there is an outlier at both the lower and upper end of the range. Note: there is not a tick mark for each of the 29 colleges in the data frame since some tick marks indicate two or more colleges.
+
+### Top-right Corner
+
+These boxes display the correlation coefficient for the two variables that intersect in that box. For example, the very top-right corner, with a coefficient of 0.16, is the correlation between *Core* (Salaries and wages for core expenses as a percent of total core expenses) and *InstSup* (Salaries and wages for institutional support as a percent of total institutional support expenses).
+
+### Lower-left Corner
+
+The boxes in the lower-left corner display a scatter plot between the two variables at that intersection. For example, consider the box in bottom left corner of the splom.
+
+* **Scatterplot**. The dots are a scatter plot of *Core* (Salaries and wages for core expenses as a percent of total core expenses) along the X-Axis and *InstSup* (Salaries and wages for institutional support as a percent of total institutional support expenses) along the Y-Axis. 
+
+* **Means**. The red dot is the location of the means for the two variables.
+
+* **Correlation Circle**. The circle indicates the strength of the correlation. A perfectly circular trace would indicate a correlation of zero while a straight line would be a correlation of +/- 1.0. Thus, the correlation circle in the lower-left corner is nearly perfectly round, indicating the correlation is quite weak and, in fact, the correlation of 0.16 is weak. Compare that to the correlation circle for *AcadSup* and *StuSvc*, which is more elliptical and with a positive slope, graphically illustrating the correlation coefficient of 0.43.
+
+* **LOESS Line**. The red line is the LOESS line, which is a regression line that uses weighting to produce a smooth line for the relationship between variables as opposed to a straight regression line. As an example, while the correlation is very weak, the loess line for the box in the lower left corner (*Core* vs. *InstSup*) indicates that colleges spending the least percent for *Core* salaries would also spend the least for *InstSup* salaries while colleges spending at the extreme of either variable would also be at the extreme of the other variable. The loess line for *AcadSup* vs. *StuSvc* is almost straight and in a positive direction, which would be expected with a correlation of 0.43 for those two variables. Another easy to spot positive loess line is that for *Inst* vs. *AcadSup* and that correlation is 0.39. Finally, notice the loess line for *Inst* vs. *StuSvc*. That correlation circle is fairly elliptical and corresponds with a coefficient of 0.36. The loess line within that circle is linear with a positive slope. Notice, though, large outliers for both *Inst* and *StuSvc* that would not be evident from just the coefficient alone.
+
+## Summary
+
+A *SPLOM* is a great tool for initial data analysis and in a very compact display provides a lot of information to help an analyst find relationships of interest.
+

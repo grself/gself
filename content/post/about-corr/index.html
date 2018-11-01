@@ -1,0 +1,247 @@
+---
+title: "About Correlation"
+author: "George Self"
+date: 2018-08-31T08:00:00-07:00
+description: "-- How to determine the correlation among a lot of variables at once! --"
+categories: ["r"]
+tags: ["correlation","correlogram","ipeds","peers"]
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<p>One of the main preoccupations for data researchers is to attempt to find some sort of correlation, or relationship, between two or more attributes of a data frame. The calculated correlation is a number between -1.0 and +1.0 where correlations close to 0.0 are very weak while correlations near the extremes are strong. The type of correlation that can be calculated is dependent on the type of data being compared since the process for categorical data is fundamentally different than that for continuous data. <em>R</em> provides several useful methods for calculating correlations and researchers need to be familiar with each of them.</p>
+<div id="basic-correlations" class="section level2">
+<h2>Basic Correlations</h2>
+<p>For this blog post, the Cochise College IPEDs Peer data frame will be used. That data frame was first seen in <em>Introduction to Our IPEDS Peers</em> (August 24, 2018). That data frame includes 113 attributes for 29 colleges and it is natural to wonder if any of those attributes are related to each other. For example, it is reasonable to assume that the number of full-time students is related to the expense of instruction, that is, as one increases the other should also increase. In fact, the correlation between those two attributes is -0.249, which is rather weak but does exist.</p>
+<p>However, there may be many other unexpected correlations lurking in that data frame. It would be possible to calculate the correlation between each pair of attributes one at a time, but that would be very time-consuming (and, frankly, mind-numbing). However, R creates a correlation matrix if more than two variables are compared at one time. As an example, I extracted information about the price of attending each of the colleges in the peer group and compared those prices to the enrollments to try to determine if there was a relationship between the price of attending and the number of students enrolling.</p>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: orange;background-color: brown;">
+Code
+</th>
+<th style="text-align:left;color: orange;background-color: brown;">
+Def
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Tui
+</td>
+<td style="text-align:left;">
+Tuition
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pri1
+</td>
+<td style="text-align:left;">
+Price for In-State Students Living Off-Campus Living Alone
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pri2
+</td>
+<td style="text-align:left;">
+Price for In-State Students Living Off-Campus Living With Family
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Enr
+</td>
+<td style="text-align:left;">
+Total Enrollment
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FT
+</td>
+<td style="text-align:left;">
+Number of Full-Time Students
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PT
+</td>
+<td style="text-align:left;">
+Number of Part-Time Students
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: orange;background-color: brown;">
+Matrix
+</th>
+<th style="text-align:right;color: orange;background-color: brown;">
+Tui
+</th>
+<th style="text-align:right;color: orange;background-color: brown;">
+Pri1
+</th>
+<th style="text-align:right;color: orange;background-color: brown;">
+Pri2
+</th>
+<th style="text-align:right;color: orange;background-color: brown;">
+Enr
+</th>
+<th style="text-align:right;color: orange;background-color: brown;">
+FT
+</th>
+<th style="text-align:right;color: orange;background-color: brown;">
+PT
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+Tui
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+Pri1
+</td>
+<td style="text-align:right;">
+0.108
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+Pri2
+</td>
+<td style="text-align:right;">
+0.215
+</td>
+<td style="text-align:right;">
+0.717
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+Enr
+</td>
+<td style="text-align:right;">
+-0.272
+</td>
+<td style="text-align:right;">
+-0.142
+</td>
+<td style="text-align:right;">
+0.066
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+FT
+</td>
+<td style="text-align:right;">
+0.106
+</td>
+<td style="text-align:right;">
+-0.038
+</td>
+<td style="text-align:right;">
+0.354
+</td>
+<td style="text-align:right;">
+0.444
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+PT
+</td>
+<td style="text-align:right;">
+-0.326
+</td>
+<td style="text-align:right;">
+-0.166
+</td>
+<td style="text-align:right;">
+-0.027
+</td>
+<td style="text-align:right;">
+0.968
+</td>
+<td style="text-align:right;">
+0.205
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+<p>From the above matrix, I could tell that there is a very strong correlation between enrollment and the number of part-time students (0.968), which means that a lot of the enrollment is driven by part-time students. I also notice a moderate negative correlation between the tuition and the number of part-time students (-0.326). This would indicate that as tuition increases the number of part-time students decreases.</p>
+</div>
+<div id="correlograms" class="section level2">
+<h2>Correlograms</h2>
+<p>All of this is fine and easy enough to do for just the six attributes in the above table, but what if I wanted to analyze more attributes, maybe a dozen at one time? The table full of numbers would quickly become overwhelming, but <em>R</em> provides a great tool for visually evaluating a correlation matrix: <em>correlogram.</em> The following illustration is a correlogram for 21 enrollment-related attributes from the peers’ data frame. The attribute names are abbreviated in the main diagonal then the upper and lower triangles present the correlations using two different methods.</p>
+<p>In the lower triangle, the correlation calculations are shown using a color code. The brighter the blue color then the greater the positive correlation while the brighter the red color the greater the negative correlation. I can then look for bright colors to quickly isolate correlations of interest. To read the correlogram using the colored squares in the lower triangle follow one column up to the diagonal to see one of the factors that are being correlated and then right to the diagonal to see the other factor. The same type of process can be used with the numeric data in the top triangle by following a row across to the left and a column down to find the two factors that are correlated for that number. For example, near the top of the diagonal, the value 0.44 is found. This is a reasonably high positive correlation so it is in bright blue. From that number, the factor to the left is “Ttl” and the factor down is “FT” so this is a correlation between total enrollment and the number of full-time students. This, by the way, is also what was found in the correlation matrix presented above.</p>
+<p>Using a correlogram makes it easy to quickly find correlations of interest in even a fairly large data frame. As just one last example, I noticed that the students pursuing no degree (abbreviated as “NoDeg” in the diagonal) have a very strong correlation with part-time students, indicating that there is some sort of relationship between being part-time and not declaring a major.</p>
+<p><img src="/post/about-corr/index_files/figure-html/printCorrGram1-1.png" width="672" /></p>
+<p>Here is an example correlogram with financial data from the peer institutions.</p>
+<p><img src="/post/about-corr/index_files/figure-html/printCorrGram2-1.png" width="672" /></p>
+<p>It does not take long to detect a strong correlation between revenue (“Rev”) and expenses (“Exp”), but that would be expected. As one quick analysis from this correlogram, I noticed that there is a negative correlation between tuition (“Tui”) and the percentage of revenue generated from local taxes (“Loc”). While a correlation does not imply any sort of causative direction, I would guess that as local taxes decrease for whatever reason the college must increase tuition to make up the difference, but more research would be needed to try to verify that guess.</p>
+</div>
+<div id="wrapup" class="section level2">
+<h2>Wrapup</h2>
+<p>Correlation is a very important tool for researchers and <em>R</em> provides a number of ways to calculate and interpret correlations. This post has listed a few that I tend to use, but there are many more (several that I’m sure I’ve never even heard of).</p>
+</div>

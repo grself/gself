@@ -7,12 +7,19 @@ Tap more reports from EMSI
 
 ## I use the Hugo "Ghostwriter" theme
 
+###### Style Guide ######
+The word *R* is italicized.
+*R* commands are set off by single back-ticks: `str(cafe)`
+Data frame names and variables are italicized 
+"Data frame" is two words, not one
+
+
 ###### YAML Header ######
 
 ---
 title: "x"
 author: "George Self"
-date: 2018-08-21T08:00:00-07:00
+date: 2018-11-10T08:00:00-07:00
 description: "-- x --"
 categories: ["cochise"]
 tags: []
@@ -57,12 +64,20 @@ tutorial::go_interactive()
 
 ```
 
-###### Style Guide ######
-The word *R* is italicized.
-*R* commands are set off by single back-ticks: `str(cafe)`
-Data frame names and variables are italicized 
-"Data frame" is two words, not one
+###### GIT Notes ######
 
+Open the GIT shell
+Navigate to the GIT directory of interest on the e:/ drive
+
+cd /e/GitHub/gself
+git add *
+git commit -m "commit message"
+git push origin master
+
+Note: you'll get a lot of warnings about line endings. 
+As the files are uploaded the line ending are changed 
+to CRLF (Unix-style) rather than just CR (Windows-style). 
+That doesn't seem to hurt anything.
 
 
 ###### Data Files ######
@@ -71,14 +86,19 @@ For a blog post, the data file must be in the same directory as
 the .Rmd file. Otherwise, the post will not build since it won't be
 able to find the file.
 
+For simpler posts, I create a data frame for each post rather than
+use a general data frame and process it with the post. Those data
+frames are created at Google Drive/Web Source Files. When the 
+data frame is ready it is copy/pasted into the icochise directory
+and then used there.
+
 For the tutorials, put the cafe data file in /static/data/ and
 then link to that in the tutorial using the full URL. That works
 since the file is not needed until the tutorial page is opened 
-and it will be present in the directory by then.
+and the data directory will be built by then.
 
 
 ###### R Tools  ######
-
 
 ## Bar Plot Setup
 
@@ -135,76 +155,114 @@ df %>%
              color = "#FFFFFF",
              background = "#1e4d99")
 
-
-###### GIT Notes ######
-
-Open the GIT shell
-Navigate to the GIT directory of interest on the e:/ drive
-
-cd /e/GitHub/gself
-git add *
-git commit -m "commit message"
-git push origin master
-
-Note: you'll get a lot of warnings about line endings. As the files are uploaded the line ending are changed to CRLF (Unix-style) rather than just CR (Windows-style). That doesn't seem to hurt anything.
-
-
-
 ###### Directory ######
 
-## Data frames
-* age_eth_sex.csv
-* CrsProgOrig.csv
-* enr_hist_all.csv
-* enr_hist_cte.csv
-* jobs_completions.csv
-* peers.csv
-* reg.csv
-* transfer.csv
-* unemp.csv
+## Posting Dates
+* 180821: Moving Day! (moving-day)
+* 180824: Introduction to Our IPEDS Peers (intro-to-ipeds)
+* 180828: Registration Exporation (reg-explor)
+* 180831: About Correlation (about-corr)
+* 180904: Continuous Improvement (cont-imp)
+* 180907: Registration vs. Unemployment (reg-vs-unemp)
+* 180911: Math Transfer (math-transfer)
+* 180914: Exploring Intelliboard (intelliboard)
+* 180918: University Transfer Student Characteristics (univ-trans-char)
+* 180921: Skills Gap Analysis (skills-gap)
+* 180925: Top and Bottom Growth Occupations (growth-occ)
+* 180928: Cochise County Economic Overview (cc-econ-overvw)
+* 181002: Completions and Jobs (comp-and-jobs)
+* 181005: Fun Moodle Stats (moodle-stats)
+* 181009: About Data... (about-data)
+* 181012: Data Exploration (data-explor)
+* 181016: Simple Regression (simple-regres)
+* 181019: Medical Billing (med-billing)
+* 181022: Discipline Success (disc-success)
+* 181026: Art With R (art-with-r)
+* 181030: Career Coach (career-coach)
+* 181102: The Scatterplot Matrix (splom)
+
+## Visualizations
+* animation
+  * 180907: Registration vs. Unemployment (reg-vs-unemp)
+* data table (DT)
+  * 181022: Discipline Success (disc-success)
+  * 181102: The Scatterplot Matrix (splom)
+* ggPlot
+  * bar
+    * 180824: Introduction to Our IPEDS Peers (intro-to-ipeds)
+    * 181012: Data Exploration (data-explor)
+  * mosiac
+    * 180828: Registration Exporation (reg-explor)
+  * alluvial
+    180911: Math Transfer (math-transfer)
+  * histogram
+    181009: About Data... (about-data)
+  * density 
+    * 181009: About Data... (about-data)
+    * 181012: Data Exploration (data-explor)
+  * scatter
+    * 181026: Art With R (art-with-r)
+* Kable
+  * 180824: Introduction to Our IPEDS Peers (intro-to-ipeds)
+  * 180828: Registration Exporation (reg-explor)
+  * 180831: About Correlation (about-corr)
+  * 181012: Data Exploration (data-explor)
+* plotly
+  * 180828: Registration Exporation (reg-explor)
+  * 180907: Registration vs. Unemployment (reg-vs-unemp)
+  * 180911: Math Transfer (math-transfer)
+  * 181016: Simple Regression (simple-regres)
+* Scatterplot Matrix (SPLOM)
+  * 181102: The Scatterplot Matrix (splom)
 
 ## R Functions
 * correlogram
-  * 180831: About Correlation
-  * 181012: Regression
-* dplyr - combine two rows into one: 180907: Math Transfer
-* head(): 181009: Explore Data
+  * 180831: About Correlation (about-corr)
+  * 181016: Simple Regression (simple-regres)
+* dplyr
+  * combine two rows into one: 180911: Math Transfer (math-transfer)
+* head()
+  * 181012: Data Exploration (data-explor)
 * kurtosis
-  * 181005: About Data
-  * 181009: Explore Data
-* lm(): 181012: Regression
-* pairs.panel(): 181030: SPLOM (this is from the psych library)
-* shapiro.test: 181005: About Data
+  * 181009: About Data... (about-data)
+  * 181012: Data Exploration (data-explor)
+* lm()
+  * 181016: Simple Regression (simple-regres)
+* pairs.panel() (from psych library)
+  * 181102: The Scatterplot Matrix (splom)
+* shapiro.test: 
+  * 181009: About Data... (about-data)
 * skewness
-  * 181005: About Data
-  * 181009: Explore Data
-* str(): 181009: Explore Data
+  * 181009: About Data... (about-data)
+  * 181012: Data Exploration (data-explor)
+* str()
+  * 181012: Data Exploration (data-explor)
 
-## Visualizations
-* data table (DT)
-  * 181019: Discipline Success
-  * 181030: Splom
-* ggPlot
-  * bar: 
-    * 180824: Introduction to IPEDS Peers
-    * 181009: Explore Data
-  * mosiac: 180828: Registration Exploration
-  * alluvial: 180907: Math Transfer
-  * histogram: 181005: About Data
-  * density: 
-    * 181005: About Data
-    * 181009: Explore Data (inc mean/median lines)
-  * scatter
-    * 181022: Art With R
-* Kable
-  * 180824: Introduction to IPEDS Peers
-  * 180828: Registration Exploration
-  * 180831: About Correlation
-  * 181009: Explore Data
-* plotly
-  * 180828: Registration Exploration (line)
-  * 180904: Registration vs Unemployment (animated scatter plot)
-  * 180907: Math Transfer (bar)
-  * 181012: Regression
-* Scatterplot Matrix (SPLOM)
-  * 181030: Splom
+## Data frames
+* 180824: Introduction to Our IPEDS Peers (intro-to-ipeds)
+  * peers.csv  
+* 180828: Registration Exporation (reg-explor)
+  * reg.csv
+* 180831: About Correlation (about-corr)
+  * peers.csv
+* 180907: Registration vs. Unemployment (reg-vs-unemp)
+  * enr_hist_all.csv
+  * enr_hist_cte.csv
+  * unemp.csv
+* 180911: Math Transfer (math-transfer)
+  * crs_prog_orig.csv
+* 180918: University Transfer Student Characteristics (univ-trans-char)
+  * transfer.csv
+* 180925: Top and Bottom Growth Occupations (growth-occ)
+  * occupations.csv
+* 181002: Completions and Jobs (comp-and-jobs)
+  * jobs_completions.csv
+* 181012: Data Exploration (data-explor)
+  * age_eth_sex.csv
+* 181016: Simple Regression (simple-regres)
+  * peers.csv
+* 181022: Discipline Success (disc-success)
+  * discipline_success.csv  
+* 181102: The Scatterplot Matrix (splom)
+  * peers.csv
+

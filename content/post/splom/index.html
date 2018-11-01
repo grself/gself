@@ -1,0 +1,62 @@
+---
+title: "The Scatterplot Matrix (SPLOM)"
+author: "George Self"
+date: 2018-11-02T08:00:00-07:00
+description: "-- A SPLOM Visualizes Several Scatterplots At Once --"
+categories: ["r"]
+tags: ["scatterplot","matrix"]
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/pymjs/pym.v1.js"></script>
+<script src="/rmarkdown-libs/widgetframe-binding/widgetframe.js"></script>
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>While working with a data frame that contains a number of variables it is helpful to look at combinations of those variables to determine if any relationships are evident. One way to do that is to create a correlogram (see the post for <a href="about-correlation">August 31</a>, but another interesting method is to create a <em>Scatterplot Matrix</em> (sometimes called a <em>SPLOM</em>) and this post illustrates that feature.</p>
+</div>
+<div id="procedure" class="section level2">
+<h2>Procedure</h2>
+<p>For this exploration I chose to use the IPEDS data frame for several reasons. First, I’m familiar with that data frame and, second, it has a lot of data that can be analyzed as a good example. To make a nice splom that would be easy to read. I wanted four or five variables that would reasonably be related that I could pair so I chose the various categories of salary as a percent of core expenses. Following are the five variables that I compared.</p>
+<ul>
+<li>Core: Salaries and wages for core expenses as a percent of total core expenses</li>
+<li>Inst: Salaries and wages for instruction as a percent of total expenses for instruction</li>
+<li>AcadSup: Salaries and wages for academic support as a percent of total expenses for academic support</li>
+<li>StuSvc: Salaries and wages for student services as a percent of total expenses for student services</li>
+<li>InstSup: Salaries and wages for institutional support as a percent of total expenses for institutional support</li>
+</ul>
+<p>It may be helpful to look at the raw data for these five variables.</p>
+<div id="htmlwidget-1" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"url":"/post/splom/index_files/figure-html//widgets/widget_dataTable.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<p>Here is the splom for these five variables.</p>
+<p><img src="/post/splom/index_files/figure-html/splom-1.png" width="672" /></p>
+<p>A bit of an explanation is in order.</p>
+<div id="diagonal-boxes" class="section level3">
+<h3>Diagonal Boxes</h3>
+<p>The variables tested are listed along the diagonal, along with the following information about each variable.</p>
+<ul>
+<li><strong>Histogram</strong>. This is plot looks like rectangles that graphically indicate the number of values that fall into each bin. As an example, histogram for the <em>InstSup</em> (“Institutional Support”) box is divided into five bins that indicate the various percentages colleges allocate for Institutional Support salaries. The tallest rectangle, between 30 and 40 percent, shows that most colleges in the sample allocate between 30 and 40 percent of their Institutional Support expenses to salaries. Note, the y-axis scale is intended to be used for the scatter plots and is not meaningful for the histogram.</li>
+<li><strong>Density Plot</strong>. The black line is the density, or data distribution, smoothed out over the entire range of the variable. This is useful for visualizing the distribution where the histogram may be too course. The density plot for the “Core” variable shows an almost perfect normal distribution which is not evident from the histogram.</li>
+<li><strong>Rug Plot</strong>. These are the tiny tick marks along the bottom of the histogram and show where the 29 colleges lie along the histogram. Using the <em>InstSup</em> values, the rug plot makes it clear that while most of the colleges are in the 30-40 percent range there is an outlier at both the lower and upper end of the range. Note: there is not a tick mark for each of the 29 colleges in the data frame since some tick marks indicate two or more colleges.</li>
+</ul>
+</div>
+<div id="top-right-corner" class="section level3">
+<h3>Top-right Corner</h3>
+<p>These boxes display the correlation coefficient for the two variables that intersect in that box. For example, the very top-right corner, with a coefficient of 0.16, is the correlation between <em>Core</em> (Salaries and wages for core expenses as a percent of total core expenses) and <em>InstSup</em> (Salaries and wages for institutional support as a percent of total institutional support expenses).</p>
+</div>
+<div id="lower-left-corner" class="section level3">
+<h3>Lower-left Corner</h3>
+<p>The boxes in the lower-left corner display a scatter plot between the two variables at that intersection. For example, consider the box in bottom left corner of the splom.</p>
+<ul>
+<li><p><strong>Scatterplot</strong>. The dots are a scatter plot of <em>Core</em> (Salaries and wages for core expenses as a percent of total core expenses) along the X-Axis and <em>InstSup</em> (Salaries and wages for institutional support as a percent of total institutional support expenses) along the Y-Axis.</p></li>
+<li><p><strong>Means</strong>. The red dot is the location of the means for the two variables.</p></li>
+<li><p><strong>Correlation Circle</strong>. The circle indicates the strength of the correlation. A perfectly circular trace would indicate a correlation of zero while a straight line would be a correlation of +/- 1.0. Thus, the correlation circle in the lower-left corner is nearly perfectly round, indicating the correlation is quite weak and, in fact, the correlation of 0.16 is weak. Compare that to the correlation circle for <em>AcadSup</em> and <em>StuSvc</em>, which is more elliptical and with a positive slope, graphically illustrating the correlation coefficient of 0.43.</p></li>
+<li><p><strong>LOESS Line</strong>. The red line is the LOESS line, which is a regression line that uses weighting to produce a smooth line for the relationship between variables as opposed to a straight regression line. As an example, while the correlation is very weak, the loess line for the box in the lower left corner (<em>Core</em> vs. <em>InstSup</em>) indicates that colleges spending the least percent for <em>Core</em> salaries would also spend the least for <em>InstSup</em> salaries while colleges spending at the extreme of either variable would also be at the extreme of the other variable. The loess line for <em>AcadSup</em> vs. <em>StuSvc</em> is almost straight and in a positive direction, which would be expected with a correlation of 0.43 for those two variables. Another easy to spot positive loess line is that for <em>Inst</em> vs. <em>AcadSup</em> and that correlation is 0.39. Finally, notice the loess line for <em>Inst</em> vs. <em>StuSvc</em>. That correlation circle is fairly elliptical and corresponds with a coefficient of 0.36. The loess line within that circle is linear with a positive slope. Notice, though, large outliers for both <em>Inst</em> and <em>StuSvc</em> that would not be evident from just the coefficient alone.</p></li>
+</ul>
+</div>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>A <em>SPLOM</em> is a great tool for initial data analysis and in a very compact display provides a lot of information to help an analyst find relationships of interest.</p>
+</div>

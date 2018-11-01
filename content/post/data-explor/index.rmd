@@ -1,0 +1,226 @@
+---
+title: "Data Exploration"
+author: "George Self"
+date: 2018-10-12T08:00:00-07:00
+description: "-- A Process To Explore A Data Frame --"
+categories: ["r"]
+tags: ["data","exploration","kurtosis","skew"]
+---
+
+
+```{r setup, include=FALSE}
+# Load some libraries
+library(tidyverse)
+library(here)
+library(ggplot2)
+library(plotly)
+library(moments)
+library(kableExtra)
+
+# Set the rproj home directory
+here::here()
+```
+
+```{r createDF, echo=FALSE, message=FALSE, warning=FALSE}
+
+# Create table
+pers <- read_csv("age_eth_sex.csv") %>%
+  rename(
+    "age" = AGE
+    ,"etn" = SPBPERS_ETHN_CODE
+    ,"sex" = SPBPERS_SEX
+  )
+
+```
+
+
+One of the first things I must do when I am faced with a new data set is to look the data over and get a general feel for what is contained in the data set. *R* provides a number of great tools for exploring data before I ever start worrying about the results of a specific survey or answering a research question.
+
+The data that I used for this exercise was drawn from the college's student information database. I used the records of 4,882 students who enrolled in one or more classes in the fall of 2017 and extracted only three variables from those records: Age, Ethnicity, and Sex. The following table is a small sample of the data pulled at random from the 4,882 records.
+
+```{r viewSample, echo=FALSE, message=FALSE, warning=FALSE}
+
+# The following creates a random pull from the df using the "sample" function
+#head(slice(df, sample(1:n())),10)
+
+sampleData <- data.frame(
+	"Age" = c(
+		25,
+		32,
+		27,
+		51,
+		18
+	),
+	"Ethn" = c(
+		'1',
+		'NA',
+		'NA',
+		'NA',
+		'3'
+	),
+	"Sex" = c(
+    'F',
+    'F',
+    'M',
+    'F',
+    'M'
+	)
+)
+
+sampleData %>%
+    kable("html",align = c("r","c","c")) %>%
+    kable_styling(bootstrap_options = c("striped", "condensed"), 
+                  full_width = FALSE, 
+                  position = "center")
+
+```
+
+
+## First Assessment
+
+One of the first things I do when I am facing a new data set is some simple analysis. I start with the *R* "structure" command, `str()`, and the result can be seen below. 
+
+```{r viewStr, echo=FALSE, message=FALSE, warning=FALSE}
+
+str(pers)
+
+```
+
+I can see that the data set is an *R* tibble ("tbl") and data.frame ("df") and that there are 4,882 observations ("rows") and 3 variables ("columns") named *Age,* *Ethn,* and *sex.* I see that *Age* is a numeric variable with the first few values being 12, 14, 14, and 15. I see that *Ethn* is a numeric variable but the first few values are missing ("NA"). Finally, I see that *Sex* is a character variable with the values "M" and "F." The remaining lines are of no value for this discussion.
+
+The next thing I do is take a look at the first six lines of data with the command `head()`, as shown below. Again, I can see the data matches what I found in the structure command. At this point, I would be a bit concerned with the *Ethn* field since there does not seem to be anything there, but I will explore that later.
+
+```{r viewHead, echo=FALSE, message=FALSE, warning=FALSE}
+
+head(pers)
+
+```
+
+
+Finally, I want to get a better look at the numeric field, *Age,* so I use the command `summary()`, as shown below. From this command, I can see that *Age* runs from 12 to 89. I also see that the median is 24 with the mean of 28.51. Since the mean is much closer to the minimum than the maximum, I suspect that the data are skewed. 
+
+```{r viewSummary, echo=FALSE, message=FALSE, warning=FALSE}
+
+summary(pers$age)
+
+```
+
+Because I suspect that the *Age* field is skewed, I decided to run a couple of other tests on it. First I checked its skewness and kurtosis, as shown below. The skewness for a normal distribution is 0 so the value of 1.7 is reasonably high. I would expect the bell curve (which I will plot later in this post) will have a positive skew. The kurtosis for a normal distribution is 3.0 so the value of 5.78 is rather high. I will expect the bell curve to have a sharp peak. Finally, the Shapiro-Wilk test finds a tiny p-value, less than 2.2X10<sup>-16</sup>, which means that this data set is significantly different from a normal distribution. I will be interested to see what the curve looks like later.
+
+```{r ageTests, echo=FALSE, message=FALSE, warning=FALSE}
+
+cat('Skew: ', skewness(pers$age), '\n')
+cat('Kurtosis: ', kurtosis(pers$age), '\n')
+shapiro.test(pers$age)
+
+```
+
+
+## Missing Data
+
+The *Ethn* data variable is supposed to contain an ethnicity code that can be used for reports about our student ethnic composition. I decided to start my analysis with that field since there was so much missing data, indicated by the *NA.* It was important to determine how much data was missing so I created a table with the counts of the various ethnic groups.
+
+```{r countEthn,, echo=FALSE, message=FALSE, warning=FALSE}
+
+#addmargins(table(df$Ethn))
+
+ethnTable <- as.tibble(addmargins(table(pers$etn))) %>%
+  rename(Ethn = Var1,
+         Freq = n) %>%
+  t(.)
+
+
+ethnTable %>%
+    kable("html",align = c("c","c","c", "c", "c", "c", "c")) %>%
+    kable_styling(bootstrap_options = c("striped", "condensed"), 
+                  full_width = FALSE, 
+                  position = "center")
+
+```
+
+Notice that only 774 out of 4,882 records have an ethnicity indicated, which means that the overwhelming majority of the records are missing these data. An analyst is always challenged by missing data and is often reminded that *there is no good way to deal with missing data.* However, in general, two techniques are used with missing data: imputation and deletion.
+
+### Imputation
+
+An analyst can attempt to impute (or "guess") the value of the missing data. For continuous data, for example, an analyst could enter the mean of the variable for all missing values. While this process would fill those missing data values, it would also assume (likely incorrectly) that the missing data would have been at the mean if it had been provided. Other more complex methods of imputation are possible but they all suffer from the same problem, it is just not accurate to assume that the missing value can be calculated from the data that are present.
+
+### Deletion
+
+An analyst can delete an entire record if one of the data fields is missing. In the case of the data used for this post, that would mean 4,108 records would be deleted, which is 84% of the entire data set. Deleting that much of the data would, no doubt, introduce bias since the records remaining would no longer represent the entire population. The other option is to delete the entire data variable and just not analyze it at all; and that is the path I chose to take for ethnicity.
+
+## Sex
+
+The next data field I wanted to analyze was *Sex.* This is a character field that seems to contain only *M* and *F* so I wanted to first determine if there were other characters in that field and if any of those data were missing. I created the same sort of data table for sex as I did for ethnicity.
+
+```{r countSex,, echo=FALSE, message=FALSE, warning=FALSE}
+
+#addmargins(table(df$Sex))
+
+
+sexTable <- as.tibble(addmargins(table(pers$sex))) %>%
+  rename(Sex = Var1,
+         Freq = n) %>%
+  t(.)
+
+
+sexTable %>%
+    kable("html",align = c("c","c","c","c")) %>%
+    kable_styling(bootstrap_options = c("striped", "condensed"), 
+                  full_width = FALSE, 
+                  position = "center")
+
+
+```
+
+I noticed that there were a few more women than men, which I expected. I also noticed that 23 students listed *N* for sex. I assume that means they did not want to disclose that data, but since the data are not missing and it is such a small number it is appropriate to leave it in for my analysis.
+
+For a data field with only three possible values it is no problem to analyze it using only counts of each value, that is, how many *F,* how many *M,* and how many *N;* however, if there were a lot of different types of *Sex* I would probably want to also create a bar chart in order to compare the frequency counts visually. The following bar chart shows the number of Males, Females, and Other students visually.
+
+```{r sexBar, echo=FALSE, message=FALSE, warning=FALSE}
+
+cols <- c("M" = "tan4", "F" = "tan3", "N" = "tan", "NA" = "grey60")
+
+p1 <- ggplot(data = pers, aes(x = as.factor(sex), fill=as.factor(sex))) +
+  geom_bar(stat = "count") +
+  scale_fill_manual(values=cols) +
+  theme_bw() +
+  labs(title = "Counts of Sex", x = "Sex", y = "Frequency") +
+  guides(fill=guide_legend(title="Sex")) +
+  coord_flip()
+
+ggplotly(p1)
+
+```
+
+## Age
+
+The age field is a numeric data field and it must be analyzed using techniques appropriate for continuous data. I have already determined that the data are not normally distributed but I should still be able to construct a density plot to get a look at the data.<figure class="wp-block-image">
+
+```{r ageDensityPlot, echo=FALSE, message=FALSE, warning=FALSE}
+
+# This is necessary to include an apostrophe in the title
+plotTitle <- expression("Density Plot for Age")
+
+# Put this in a variable in case you want to use it for plotly or something
+p2 <- ggplot(pers, aes(x = age)) +
+  geom_density(alpha = .5,
+              fill = '#FC9D29') +
+  labs(title = as.character(plotTitle),
+       x = 'Age',
+       y = 'Percent') +
+  theme_classic() +
+  geom_vline(aes(xintercept = mean(age)),
+       color='#A729FC', linetype='dashed', size=1) +
+  geom_vline(aes(xintercept = median(age)),
+       color='#29D2FC', linetype='dashed', size=1)
+
+
+ggplotly(p2)
+
+```
+
+The plot clearly shows a data set that is badly skewed positive (notice the long "tail" on the positive side). Also, the mean, the purple line, is significantly higher than the mean, the green line. The peak is well below both median and mean, which indicates a skewed data set. This is all in agreement with what was calculated near the top of this post.
+
+## Summary
+
+Before I ever begin applying advanced tests, like ANOVA, to a data set, I take a look at it using the tools discussed on this page. By taking the time for that step, I can get a feel for what is in the data set and, hopefully, proceed with fewer "do-overs."
