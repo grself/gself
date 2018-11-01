@@ -2,6 +2,7 @@
 title: "Simple Regression"
 author: "George Self"
 date: 2018-10-16T08:00:00-07:00
+mathjax: true
 description: "-- Exploring Simple Regression Models --"
 categories: ["r"]
 tags: ["correlogram","ggplot","plotly","regression"]
