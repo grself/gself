@@ -1,26 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Discipline on gself</title>
-    <link>https://gself.com/tags/discipline/</link>
-    <description>Recent content in Discipline on gself</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>George Self</copyright>
-    <lastBuildDate>Mon, 22 Oct 2018 08:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://gself.com/tags/discipline/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Discipline Success</title>
-      <link>https://gself.com/2018/10/22/disc-success/</link>
-      <pubDate>Mon, 22 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/22/disc-success/</guid>
-      <description>This week I took a look at the “Course Benchmark Report” at the Arizona ASSIST site, where data about students who transfer from our college to any of the public universities is available. This report shows the success rate for our students.
-{&#34;x&#34;:{&#34;url&#34;:&#34;/post/disc-success/index_files/figure-html//widgets/widget_topTable.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}I suppose that the first fact that jumped out at me was the number of Computer Science and English students who transfer; no other discipline comes very close to those numbers.</description>
-    </item>
-    
-  </channel>
-</rss>

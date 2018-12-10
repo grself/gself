@@ -1,241 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>gself</title>
-    <link>https://gself.com/</link>
-    <description>Recent content on gself</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>George Self</copyright>
-    <lastBuildDate>Tue, 30 Oct 2018 08:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://gself.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Career Coach</title>
-      <link>https://gself.com/2018/10/30/career-coach/</link>
-      <pubDate>Tue, 30 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/30/career-coach/</guid>
-      <description>IntroductionDuring the summer of 2018, Cochise College quietly launched our new Career Coach site. This is linked on the college’s homepage and is available to anyone who wants to explore careers and the training that Cochise College offers for career changes. Following is the Career Coach start page.
-Folks can jump in and start searching for careers or for programs offered at Cochise College, but it is recommended that they begin by taking an assessment to determine what sort of career may be a good match for their skills and interests.</description>
-    </item>
-    
-    <item>
-      <title>Art With R</title>
-      <link>https://gself.com/2018/10/26/art-with-r/</link>
-      <pubDate>Fri, 26 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/26/art-with-r/</guid>
-      <description>I recently found an interesting tutorial on how to use ggplot2 in R to create pretty graphs. The key is to define a mathematical function that plots points in some sort of pattern and then use various ggplot2 features to make that plot look nice. Find the tutorial at this link.
-The tutorial used the concept of phyllotaxis to create interesting scatter plots. Phyllotaxis is the spiral arrangement of the leaves on a stem and that arrangement can be simulated with a bit of mathematics.</description>
-    </item>
-    
-    <item>
-      <title>Discipline Success</title>
-      <link>https://gself.com/2018/10/22/disc-success/</link>
-      <pubDate>Mon, 22 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/22/disc-success/</guid>
-      <description>This week I took a look at the “Course Benchmark Report” at the Arizona ASSIST site, where data about students who transfer from our college to any of the public universities is available. This report shows the success rate for our students.
-{&#34;x&#34;:{&#34;url&#34;:&#34;/post/disc-success/index_files/figure-html//widgets/widget_topTable.html&#34;,&#34;options&#34;:{&#34;xdomain&#34;:&#34;*&#34;,&#34;allowfullscreen&#34;:false,&#34;lazyload&#34;:false}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}I suppose that the first fact that jumped out at me was the number of Computer Science and English students who transfer; no other discipline comes very close to those numbers.</description>
-    </item>
-    
-    <item>
-      <title>Medical Billing</title>
-      <link>https://gself.com/2018/10/19/med-billing/</link>
-      <pubDate>Fri, 19 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/19/med-billing/</guid>
-      <description>In a chance conversation I had with our Dean of Allied Health the other day, she mentioned that she was considering adding a short certificate program in medical billing but she was not sure if there was much of a job market for that skill here. I decided to access the EMSI data base and conduct a “new program” analysis to see what the job market looked like. Not too surprising, there were no job listings for medical billing specialists in Cochise County over the past several years.</description>
-    </item>
-    
-    <item>
-      <title>Simple Regression</title>
-      <link>https://gself.com/2018/10/16/simple-regres/</link>
-      <pubDate>Tue, 16 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/16/simple-regres/</guid>
-      <description>Simple RegressionFor this blog post, the Cochise College IPEDs Peer data frame will be used. That data frame was first seen in Introduction to IPEDS Peers (August 24, 2018). That data frame includes 113 attributes for 29 colleges and it is natural to wonder if any of those attributes are related to each other in such a way that they can be used for predictions.</description>
-    </item>
-    
-    <item>
-      <title>Data Exploration</title>
-      <link>https://gself.com/2018/10/12/data-explor/</link>
-      <pubDate>Fri, 12 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/12/data-explor/</guid>
-      <description>One of the first things I must do when I am faced with a new data set is to look the data over and get a general feel for what is contained in the data set. R provides a number of great tools for exploring data before I ever start worrying about the results of a specific survey or answering a research question.</description>
-    </item>
-    
-    <item>
-      <title>About Data...</title>
-      <link>https://gself.com/2018/10/09/about-data/</link>
-      <pubDate>Tue, 09 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/09/about-data/</guid>
-      <description>While working with statistics it is vital to keep in mind the various types of data and sorts of statistical analysis that are appropriate for each type. For example, it is very common for people to report the “average” of a Likert scale item, but that is applying a continuous data method to an ordinal data variable and the result is of dubious value.</description>
-    </item>
-    
-    <item>
-      <title>Fun Moodle Stats</title>
-      <link>https://gself.com/2018/10/05/moodle-stats/</link>
-      <pubDate>Fri, 05 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/05/moodle-stats/</guid>
-      <description>Cochise College uses Moodle as our online learning platform and this post presents some interesting statistics from our Moodle system.
-By policy, all students at Cochise College are automatically entered into the Moodle system, even if they are not taking an online class. By doing that, instructors in face-to-face classes can use the Moodle system to post their syllabi, reading material, and other information of interest to the class. As of today, we have 57,719 users in the Moodle system but only 21,740 are currently active so the others were created over the years and are no longer in an active class.</description>
-    </item>
-    
-    <item>
-      <title>Completions and Jobs</title>
-      <link>https://gself.com/2018/10/02/comp-and-jobs/</link>
-      <pubDate>Tue, 02 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/02/comp-and-jobs/</guid>
-      <description>The following table is a completion report for Cochise College where various programs are linked to a job analysis. For example, in the field of education, we had 23 completers in 2003 and 147 in 2017, for a 539% increase. There were 372 annual openings at a median hourly salary of $18.21. To be sure, most education jobs require degrees higher than an Associate’s, but this information is at least an indicator of the likelihood of success for our graduating students whether they continue to pursue an education degree or seek work as an education paraprofessional.</description>
-    </item>
-    
-    <item>
-      <title>Cochise County Economic Overview</title>
-      <link>https://gself.com/2018/09/28/cc-econ-overvw/</link>
-      <pubDate>Fri, 28 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/28/cc-econ-overvw/</guid>
-      <description>I produced an EMSI Economic Overview of Cochise County and attached the results below. This is a thorough 25-page report and includes information on Cochise County’s population, cost of living, employment, Gross Regional Product, and many other interesting bits of economic information. You will enjoy reading this and can use it as a reference for projects that you may be working on.
-Cochise County Economic Overview</description>
-    </item>
-    
-    <item>
-      <title>Top and Bottom Growth Occupations</title>
-      <link>https://gself.com/2018/09/25/growth-occ/</link>
-      <pubDate>Tue, 25 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/25/growth-occ/</guid>
-      <description>I’m continuing my exploration of EMSI occupational data and wanted to share another tidbit, the top and bottom occupations for Cochise County by the growth in job postings between 2013 and 2017. For example, “Grounds Maintenance Workers” had 328 job postings in 2013 and 456 in 2017 for an increase of 39%. Here are the top growth jobs (sorted by the percent change in postings).
-{&#34;</description>
-    </item>
-    
-    <item>
-      <title>Skills Gap Analysis</title>
-      <link>https://gself.com/2018/09/21/skills-gap/</link>
-      <pubDate>Fri, 21 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/21/skills-gap/</guid>
-      <description>I was privileged to attend the annual EMSI conference in Coeur D’Alene, ID, from September 10 to 12. EMSI is a company that provides labor market data that we use to analyze our programs. They gather data from a number of government sources, like the Census Bureau, and from job postings and resumes found in many different online locations. At the conference, I was able to attend sessions hosted by my colleagues in higher education and also sessions focused on other industries.</description>
-    </item>
-    
-    <item>
-      <title>University Transfer Student Characteristics</title>
-      <link>https://gself.com/2018/09/18/univ-trans-char/</link>
-      <pubDate>Tue, 18 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/18/univ-trans-char/</guid>
-      <description>The state of Arizona maintains a database that tracks students who transfer from one of our community colleges to one of our publicly-funded universities. That database includes a huge amount of information about transfer students and from time-to-time, I’ll share something from that database in my blog. For today, the following table lists some general characteristics about our transfer students over the past five years.
-Characteristics12-1313-1414-1515-1616-1717-18ChangeTotal102671050710696108211085310257-0.</description>
-    </item>
-    
-    <item>
-      <title>Exploring Intelliboard</title>
-      <link>https://gself.com/2018/09/14/intelliboard/</link>
-      <pubDate>Fri, 14 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/14/intelliboard/</guid>
-      <description>For a number of years, Cochise College has subscribed to Intelliboard, an analytics engine for our Moodle online learning management system. Intelliboard has a ton (that’s a statistics term) of analytics available and I’m just now starting to look at some of the data to determine how we can leverage that for our decision-makers. As an example, here is a graph that shows the number of page hits on our Moodle system over a one-week period.</description>
-    </item>
-    
-    <item>
-      <title>Math Transfer</title>
-      <link>https://gself.com/2018/09/11/math-transfer/</link>
-      <pubDate>Tue, 11 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/11/math-transfer/</guid>
-      <description>The state of Arizona maintains a database, named ASSIST, that contains information about courses completed by students in public colleges/universities in Arizona. For example, if a student completed MAT 220, Calculus I, at Cochise College and another student completed MAT 243, Discrete Math Structures, at Arizona State University information about both of those classes would be stored in the ASSIST database. In addition, all of the classes completed by any Arizona student can be found so it is possible to “follow” Cochise College students to the University to see how well they are doing and, of course, how well we are doing in teaching those subjects.</description>
-    </item>
-    
-    <item>
-      <title>Registration vs. Unemployment</title>
-      <link>https://gself.com/2018/09/07/reg-vs-unemp/</link>
-      <pubDate>Fri, 07 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/07/reg-vs-unemp/</guid>
-      <description>There is a common belief among community college administrators that as unemployment rates increase the number of registrations for classes at the community college also increase. The idea is that students who are unemployed look to a community college for new training opportunities that may lead to future employment.
-I wanted to look at that concept and created the following visualization to explore the idea.</description>
-    </item>
-    
-    <item>
-      <title>Continuous Improvement</title>
-      <link>https://gself.com/2018/09/04/cont-imp/</link>
-      <pubDate>Tue, 04 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/04/cont-imp/</guid>
-      <description>Far too often, strategic planning is a process that requires thousands of hours from scores of staff members to produce a massive document that ends up decorating the president’s bookshelf with very little practical application. Strategic plans in higher education are typically very comprehensive and unworkable, attempting to consolidate strategies for every facet of the college operations. Cochise College undertakes strategic planning from a different perspective. Our senior leadership is determined that it is far better to find just one goal that can move the proverbial needle within about a year, then select another goal for the next year.</description>
-    </item>
-    
-    <item>
-      <title>About Correlation</title>
-      <link>https://gself.com/2018/08/31/about-corr/</link>
-      <pubDate>Fri, 31 Aug 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/08/31/about-corr/</guid>
-      <description>One of the main preoccupations for data researchers is to attempt to find some sort of correlation, or relationship, between two or more attributes of a data frame. The calculated correlation is a number between -1.0 and +1.0 where correlations close to 0.0 are very weak while correlations near the extremes are strong. The type of correlation that can be calculated is dependent on the type of data being compared since the process for categorical data is fundamentally different than that for continuous data.</description>
-    </item>
-    
-    <item>
-      <title>Registration Exporation</title>
-      <link>https://gself.com/2018/08/28/reg-explor/</link>
-      <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/08/28/reg-explor/</guid>
-      <description>Fall 2018 Registrations by DivisionFor Fall 2018, the total number of registrations per division as of August 24, 2018, is listed in the following table.
-DivRegsLiberal Arts5180Business/Technology2395Math/Sciences2157Nursing and Allied Health1222This post uses several different R techniques to explore the registrations for the fall 2018 semester.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Our IPEDS Peers</title>
-      <link>https://gself.com/2018/08/24/intro-to-ipeds/</link>
-      <pubDate>Fri, 24 Aug 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/08/24/intro-to-ipeds/</guid>
-      <description>IPEDS Peer ComparisonFor my first blog post, I decided to take a look at a data extract from the Integrated Postsecondary Education System (IPEDS) data made available to Cochise College by the National Center for Education Statistics (NCES). All colleges and universities in the United States submit a huge amount of data to the IPEDS database every year so this is a vast repository of data about the entire higher education community.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://gself.com/page/about/</link>
-      <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/page/about/</guid>
-      <description>About I&amp;rsquo;m more than 60 years old but am not retired. I have been an elementary school teacher, an EMT, an electronics technician, and am currently a Dean at a community college. I also teach college classes in digital logic, research, and technical communication. Five Cocker Spaniels own me and my wife and on weekends I change into “Parson George” to lead ghost tours in nearby Tombstone, Arizona.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://gself.com/page/contact/</link>
-      <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/page/contact/</guid>
-      <description> Contact  Email: selfg@cochise.edu Phone: (520) 335-2958 Office: Room A110, Downtown Center, Cochise College, Sierra Vista, Arizona, USA Hours: Monday-Friday 8:30-4:30 or email for appointment  </description>
-    </item>
-    
-    <item>
-      <title>Moving Day!</title>
-      <link>https://gself.com/2018/08/21/moving-day/</link>
-      <pubDate>Tue, 21 Aug 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/08/21/moving-day/</guid>
-      <description>The Start of Something Big!I was recently transferred from the Cochise College Institutional Research department to Special Assistant to the Provost. In this new role, I have been given a good bit of freedom to explore the college’s data and look for interesting relationships and other facts. I have a number of tools available to me, including SQL, R, Tableau, and Rapid-Miner. However, for simplicity, I’ve decided to focus the lion’s share of my time and talent (at least at first) on R and use the various R tools (like ggplot, plotly, and shiny) to explore and analyze data.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to R</title>
-      <link>https://gself.com/tutorials/0010-intro-to-r/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gself.com/tutorials/0010-intro-to-r/</guid>
-      <description>Welcome to R!Statistical analysis is the core for nearly all research projects and researchers have a wide variety of statistical tools that they can use, like SPSS and SAS. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces R, a powerful, open source statistical analysis program that is available free of charge. But before diving into a statistics package there is one important background fundamental that must be covered: data.</description>
-    </item>
-    
-  </channel>
-</rss>

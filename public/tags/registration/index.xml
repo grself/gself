@@ -1,46 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Registration on gself</title>
-    <link>https://gself.com/tags/registration/</link>
-    <description>Recent content in Registration on gself</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>George Self</copyright>
-    <lastBuildDate>Fri, 05 Oct 2018 08:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://gself.com/tags/registration/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Fun Moodle Stats</title>
-      <link>https://gself.com/2018/10/05/moodle-stats/</link>
-      <pubDate>Fri, 05 Oct 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/10/05/moodle-stats/</guid>
-      <description>Cochise College uses Moodle as our online learning platform and this post presents some interesting statistics from our Moodle system.
-By policy, all students at Cochise College are automatically entered into the Moodle system, even if they are not taking an online class. By doing that, instructors in face-to-face classes can use the Moodle system to post their syllabi, reading material, and other information of interest to the class. As of today, we have 57,719 users in the Moodle system but only 21,740 are currently active so the others were created over the years and are no longer in an active class.</description>
-    </item>
-    
-    <item>
-      <title>Registration vs. Unemployment</title>
-      <link>https://gself.com/2018/09/07/reg-vs-unemp/</link>
-      <pubDate>Fri, 07 Sep 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/09/07/reg-vs-unemp/</guid>
-      <description>There is a common belief among community college administrators that as unemployment rates increase the number of registrations for classes at the community college also increase. The idea is that students who are unemployed look to a community college for new training opportunities that may lead to future employment.
-I wanted to look at that concept and created the following visualization to explore the idea.</description>
-    </item>
-    
-    <item>
-      <title>Registration Exporation</title>
-      <link>https://gself.com/2018/08/28/reg-explor/</link>
-      <pubDate>Tue, 28 Aug 2018 08:00:00 -0700</pubDate>
-      
-      <guid>https://gself.com/2018/08/28/reg-explor/</guid>
-      <description>Fall 2018 Registrations by DivisionFor Fall 2018, the total number of registrations per division as of August 24, 2018, is listed in the following table.
-DivRegsLiberal Arts5180Business/Technology2395Math/Sciences2157Nursing and Allied Health1222This post uses several different R techniques to explore the registrations for the fall 2018 semester.</description>
-    </item>
-    
-  </channel>
-</rss>
